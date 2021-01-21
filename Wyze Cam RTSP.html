@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- v19130 -->
+
+  <title>Wyze Cam RTSP – Wyze</title>
+
+  
+
+  <meta name="description" content="RTSP is not a stock feature with the Wyze Cam and is a beta feature that requires the installation of different firmware.  Using the RTSP..."><meta property="og:image" content="https://theme.zdassets.com/theme_assets/2348443/5de81ad3f22765c9a60de50e0d4a6486009008be.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wyze">
+<meta property="og:title" content="Wyze Cam RTSP">
+<meta property="og:description" content="RTSP is not a stock feature with the Wyze Cam and is a beta feature that requires the installation of different firmware.  Using the RTSP firmware will prevent the camera from supporting any future...">
+<meta property="og:url" content="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP">
+<link rel="canonical" href="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP">
+<link rel="alternate" hreflang="en" href="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP">
+
+  <link rel="stylesheet" media="all" href="./Wyze Cam RTSP_files/application-ee975b5feb03f314da5c0cb5d1476896.css" id="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./Wyze Cam RTSP_files/style.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://theme.zdassets.com/theme_assets/2348443/91aac1d975a809f156dfea2659f7da14469efd30.png">
+
+    <script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-106919826-6', 'auto');
+ga('send', 'pageview');
+</script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+<script async="" src="./Wyze Cam RTSP_files/analytics.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<link rel="stylesheet" href="./Wyze Cam RTSP_files/normalize.css">
+<link rel="stylesheet" href="./Wyze Cam RTSP_files/all.css">
+<link rel="stylesheet" href="./Wyze Cam RTSP_files/github.min.css">
+<link rel="stylesheet" href="./Wyze Cam RTSP_files/magnific-popup.css">
+<script src="./Wyze Cam RTSP_files/jquery@3.2"></script>
+<script src="./Wyze Cam RTSP_files/jquery.magnific-popup.min.js"></script>
+<script src="./Wyze Cam RTSP_files/highlight.min.js"></script>
+
+<script>
+  window.LotusConfig = {};
+  LotusConfig.css = {
+    activeClass: 'is-active',
+    hiddenClass: 'is-hidden',
+    fixedClass: 'is-fixed'
+  };
+
+  LotusConfig.helperLinks = {
+    community: "https://wyze.com/community"
+  };
+
+ LotusConfig.images = {
+   360000751451: "//theme.zdassets.com/theme_assets/2348443/71092a10c74d0d262a5e129a61be1c277bf5f093.png",
+   360003105491: "//theme.zdassets.com/theme_assets/2348443/ba7c8bac25cce3d5702830fbd6b5a3be8d4d0ae3.png",
+   360002629192: "//theme.zdassets.com/theme_assets/2348443/66ae89582a41ae7f0b7bdbe6fdb6563902a0f1a7.png",
+   360003345871: "//theme.zdassets.com/theme_assets/2348443/235c3a2fc6af3a69cbd346fbb9ea72a7b61e7d37.png",
+   360002648011: "//theme.zdassets.com/theme_assets/2348443/e8a9a9602fe2ce4c19aa5e221e8364d9c784f3be.jpg",
+   360003082292: "//theme.zdassets.com/theme_assets/2348443/1ade5382a6501a506970529d9fa49555d410e6b9.png",
+   360003105931: "//theme.zdassets.com/theme_assets/2348443/ee2e19a10a904185f11720bf6bc88b55187cc0d9.png",
+   360003105951: "//theme.zdassets.com/theme_assets/2348443/8bf2c618cbde354f290d813e80deae8b75ceb1a0.png",
+   360003082692: "//theme.zdassets.com/theme_assets/2348443/7a4a395cccd7092b72b094e6f5c92edc58e58dce.png",
+   360004564051: "//theme.zdassets.com/theme_assets/2348443/5ce2f7ef1d03f597cd8bde34ef443eabf9e2f290.png",
+   360004553152: "//theme.zdassets.com/theme_assets/2348443/e1a147d11991f80d646b65bd690162c85f5ff129.png",
+   360003105451: "//theme.zdassets.com/theme_assets/2348443/08202a07f4eed10e79c07c0f80485d1a13be3a9e.png",
+   360003105891: "//theme.zdassets.com/theme_assets/2348443/f39f8c73bd20cdaf6d99a50349bb780c0d5771e1.png",
+   360004564091: "//theme.zdassets.com/theme_assets/2348443/ba7c8bac25cce3d5702830fbd6b5a3be8d4d0ae3.png",
+   360001610132: "//theme.zdassets.com/theme_assets/2348443/4e32aff6b6ebaa3fb3ed897fb7dbd1d472684980.png",
+   360004553112: "//theme.zdassets.com/theme_assets/2348443/bd57779018bc713e4df50a3805203792d91b018f.png",
+   360004600171: "//theme.zdassets.com/theme_assets/2348443/34404e7f3465a7d374e9a98ab0d73382573cded6.png",
+   360004591812: "//theme.zdassets.com/theme_assets/2348443/bd94b895d86e27cee4414150eaf8f26cec92a0ac.png",
+   360004591792: "//theme.zdassets.com/theme_assets/2348443/98fd7f97c2da2e9b489803d3872fbeffbdf0cb8c.png",
+   360004600151: "//theme.zdassets.com/theme_assets/2348443/a62acf9ccbda17962934c27ec25812cd74606205.png",
+  360004661032: "//theme.zdassets.com/theme_assets/2348443/802f3c20d043cec6b43658af4e8b4676f8a27c6a.png",
+   'products': "//theme.zdassets.com/theme_assets/2348443/abf81542de76814438a3688b60b9931bbd155097.png",
+   'services': "//theme.zdassets.com/theme_assets/2348443/ef2e4128ae3fd39b6d400bd8f89a970676f6165c.png",
+   'integrations': "//theme.zdassets.com/theme_assets/2348443/5ce2f7ef1d03f597cd8bde34ef443eabf9e2f290.png",
+   'community' : "//theme.zdassets.com/theme_assets/2348443/af09333a9e0adb896ffc9607ae695c241661fe60.png",
+   'default': "//theme.zdassets.com/theme_assets/2348443/2280731c847f35290c8c26100b1eaac936d1d595.jpg"
+
+ };
+
+ LotusConfig.extraLevel = {
+   products: {
+     title: 'Products',
+     nestedCategories: [360004553112, 360004600151, 360004591792, 360004591812, 360004600171]
+   },
+   services: {
+     title: 'Services',
+     nestedCategories: [360003345871, 360003105891, 360002629192, 360004661032]
+   },
+   integrations: {
+     title: 'Integrations',
+     nestedCategories: [360003105931, 360003105951, 360003082692]
+   }
+ };
+
+</script>
+<script src="./Wyze Cam RTSP_files/bcbe5b4b18631e31b00f4fdf4f41a258014530fc.js"></script>
+<script src="./Wyze Cam RTSP_files/f97c50330ed9efd058c2ed1f73d7ba636892cad7.js"></script>
+<script src="./Wyze Cam RTSP_files/bf97f93e8d687b631b6800b883f5c45e871d1280.js"></script>
+<script src="./Wyze Cam RTSP_files/3833ed5dca882a9ac60d52b056349597c4b2d111.js"></script>
+<script src="./Wyze Cam RTSP_files/9bba5432303592c65680c3c1de2045c7220b9759.js"></script>
+<script src="./Wyze Cam RTSP_files/4ea5b1828bb1938537d65bf61d2b8a31daba66b5.js"></script>
+<script src="./Wyze Cam RTSP_files/10da0bd9663dbd0d723aceab2e50e6b987b41c94.js"></script>
+<script src="./Wyze Cam RTSP_files/6d0184bd3d14f633596ecedce21b24f93a1371e0.js"></script>
+<script src="./Wyze Cam RTSP_files/7e0b4b0a10782967a38f43bc04f4f7cf989c69f2.js"></script>
+<script src="./Wyze Cam RTSP_files/85c3434717d88b33eb6bfedcae9e93ac3859b6a7.js"></script>
+<script src="./Wyze Cam RTSP_files/932471bddeeefc8339bb1bba8dafadde65d93dc1.js"></script>
+<script src="./Wyze Cam RTSP_files/2afcce82405a5631865a8a27e41c6357080c8a53.js"></script>
+<script src="./Wyze Cam RTSP_files/8a2acb63bd2c2fface08fedda9afcc403d169919.js"></script>
+<script src="./Wyze Cam RTSP_files/7ecb50dcbfa61e748abd877c2b62ce4f695d5e48.js"></script>
+  
+<script async="" src="./Wyze Cam RTSP_files/api.js"></script><style>/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+._324c4dab879ba825000621078996e10c-css{
+  position:relative;
+  border:1px solid #d8dcde;
+  border-radius:4px;
+  background-color:#fff;
+  padding:20px 40px;
+  line-height:1.42857;
+  color:#68737d;
+  font-size:14px;
+}
+
+._9ee6295a35c225acab03041dc37b1186-css{
+  display:block;
+  margin:0;
+  color:#2f3941;
+  font-weight:600;
+}
+
+._4b2402d3dcf0ba8467a8bb57bdd334e0-css{
+  margin:10px 0 0;
+}
+
+._324c4dab879ba825000621078996e10c-css.a815ff12f2ffc9ac03483a39325a73dd-css{
+  direction:rtl;
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css{
+  display:block;
+  position:absolute;
+  top:4px;
+  right:4px;
+  transition:background-color .1s ease-in-out;
+  border:none;
+  border-radius:50%;
+  background-color:transparent;
+  cursor:pointer;
+  width:28px;
+  height:28px;
+  overflow:hidden;
+  text-decoration:none;
+  font-size:0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css:after,._99cc10b6fb8546b1d9c41bc41a9274a2-css:before{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  transition:opacity .25s ease-in-out;
+  background-repeat:no-repeat;
+  background-position:50%;
+  background-size:12px;
+  content:"";
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css:before{
+  opacity:1;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%2368737D'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css:after{
+  opacity:0;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%232F3941'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css:before,._99cc10b6fb8546b1d9c41bc41a9274a2-css._204ad43d6c8d258d0f4708d33517f31f-css:before,._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus:before,._99cc10b6fb8546b1d9c41bc41a9274a2-css:hover:before{
+  opacity:0;
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css:after,._99cc10b6fb8546b1d9c41bc41a9274a2-css._204ad43d6c8d258d0f4708d33517f31f-css:after,._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus:after,._99cc10b6fb8546b1d9c41bc41a9274a2-css:hover:after{
+  opacity:1;
+}
+
+._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css,._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus{
+  outline:none;
+  background-color:rgba(104, 115, 125, .15);
+}
+
+._324c4dab879ba825000621078996e10c-css.a815ff12f2ffc9ac03483a39325a73dd-css ._99cc10b6fb8546b1d9c41bc41a9274a2-css{
+  right:auto;
+  left:4px;
+}
+
+._279ce882d5b4d40f90157d4671782328-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23D93F4C'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._279ce882d5b4d40f90157d4671782328-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23681219'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+.fe7beb0ccf1d204827f7c9a2e8998068-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23228F67'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+.fe7beb0ccf1d204827f7c9a2e8998068-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%230B3B29'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._8dd0a76f68c7953bb63fdf03cd572e56-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23AD5E18'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._8dd0a76f68c7953bb63fdf03cd572e56-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23703B15'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+}
+
+._279ce882d5b4d40f90157d4671782328-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css,._279ce882d5b4d40f90157d4671782328-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus{
+  background-color:rgba(204, 51, 64, .15);
+}
+
+.fe7beb0ccf1d204827f7c9a2e8998068-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css,.fe7beb0ccf1d204827f7c9a2e8998068-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus{
+  background-color:rgba(3, 129, 83, .15);
+}
+
+._8dd0a76f68c7953bb63fdf03cd572e56-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css,._8dd0a76f68c7953bb63fdf03cd572e56-css:not(._8501c48b891d479c737404064489e941-css) ._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus{
+  background-color:rgba(173, 94, 24, .15);
+}
+
+._324c4dab879ba825000621078996e10c-css ._99cc10b6fb8546b1d9c41bc41a9274a2-css._6edeb16321555b35a02ac57333f29036-css:active,._324c4dab879ba825000621078996e10c-css ._99cc10b6fb8546b1d9c41bc41a9274a2-css:focus:active{
+  background-color:transparent;
+}
+
+._506878364b501ddbc318474af37cf483-css{
+  background-color:#f8f9f9;
+}
+
+._41abcb0799d71837a0174b2f8e5abbb8-css{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cg stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7' fill='none'/%3E%3Cpath stroke-linecap='round' d='M7.5 12.5V8'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='5' r='1' fill='currentColor'/%3E%3C/svg%3E");
+}
+
+._279ce882d5b4d40f90157d4671782328-css{
+  border-color:#f5b5ba;
+  background-color:#fff0f1;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23CC3340'%3E%3Cg fill='none' stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7'/%3E%3Cpath stroke-linecap='round' d='M7.5 4.5V9'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='12' r='1' fill='currentColor'/%3E%3C/svg%3E");
+  color:#8c232c;
+}
+
+.fe7beb0ccf1d204827f7c9a2e8998068-css{
+  border-color:#aecfc2;
+  background-color:#edf8f4;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23038153'%3E%3Cg fill='none' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4 9l2.5 2.5 5-5'/%3E%3Ccircle cx='7.5' cy='8.5' r='7'/%3E%3C/g%3E%3C/svg%3E");
+  color:#186146;
+}
+
+._8dd0a76f68c7953bb63fdf03cd572e56-css{
+  border-color:#fcdba9;
+  background-color:#fff8ed;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23AD5E18'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' d='M.88 13.77L7.06 1.86c.19-.36.7-.36.89 0l6.18 11.91c.17.33-.07.73-.44.73H1.32c-.37 0-.61-.4-.44-.73zM7.5 6v3.5'/%3E%3Ccircle cx='7.5' cy='12' r='1' fill='currentColor'/%3E%3C/svg%3E");
+  color:#ad5e18;
+}
+
+._279ce882d5b4d40f90157d4671782328-css,._41abcb0799d71837a0174b2f8e5abbb8-css,.fe7beb0ccf1d204827f7c9a2e8998068-css,._8dd0a76f68c7953bb63fdf03cd572e56-css{
+  background-repeat:no-repeat;
+  background-position:24px 22px;
+  padding-left:50px;
+}
+
+._8501c48b891d479c737404064489e941-css{
+  box-shadow:0 20px 28px 0 rgba(4, 68, 77, .15);
+}
+
+._8501c48b891d479c737404064489e941-css._279ce882d5b4d40f90157d4671782328-css,._8501c48b891d479c737404064489e941-css.fe7beb0ccf1d204827f7c9a2e8998068-css,._8501c48b891d479c737404064489e941-css._8dd0a76f68c7953bb63fdf03cd572e56-css{
+  border-color:#d8dcde;
+  background-color:#fff;
+  color:#49545c;
+}
+
+._279ce882d5b4d40f90157d4671782328-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#681219;
+}
+
+.fe7beb0ccf1d204827f7c9a2e8998068-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#0b3b29;
+}
+
+._8dd0a76f68c7953bb63fdf03cd572e56-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#703b15;
+}
+
+._8501c48b891d479c737404064489e941-css._279ce882d5b4d40f90157d4671782328-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#cc3340;
+}
+
+._8501c48b891d479c737404064489e941-css.fe7beb0ccf1d204827f7c9a2e8998068-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#038153;
+}
+
+._8501c48b891d479c737404064489e941-css._8dd0a76f68c7953bb63fdf03cd572e56-css ._9ee6295a35c225acab03041dc37b1186-css{
+  color:#ad5e18;
+}
+
+._279ce882d5b4d40f90157d4671782328-css.a815ff12f2ffc9ac03483a39325a73dd-css,._41abcb0799d71837a0174b2f8e5abbb8-css.a815ff12f2ffc9ac03483a39325a73dd-css,.fe7beb0ccf1d204827f7c9a2e8998068-css.a815ff12f2ffc9ac03483a39325a73dd-css,._8dd0a76f68c7953bb63fdf03cd572e56-css.a815ff12f2ffc9ac03483a39325a73dd-css{
+  background-position:calc(100% - 24px) 22px;
+  padding-right:50px;
+  padding-left:40px;
+}
+</style><style>.d3607c05426fe7bdf2d4de4055e44e97-css {
+}
+</style><style>._1Phom0hgtEol4G6OYlfzP7 {
+  border-radius: 5px;
+  padding: 8px 0;
+  border: 1px solid #d8dcde;
+  background: white;
+  color: #2f3941;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  font-size: 14px;
+}
+
+.x1n85xeWm-nhstdwrpep- {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+._16yusL5l0VS0RWHr98gk6U {
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+._16yusL5l0VS0RWHr98gk6U._3G4VHt9ciKlDTpQE5ftMc3 {
+  background-color: #edf7ff;
+}
+
+._3XbXjB8n_qhh_iYv0MgKxL {
+  padding: 4px 16px;
+}
+
+._2pRR5Vjeeycao853Vdz92Z {
+  position: absolute;
+  z-index: 10000000000;
+}
+
+._2VLtIcWxz3-7dCZ6jFLl7- {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  margin: 0 8px;
+}
+
+._1RcRaAt6ShOLpytFb17sDh {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+._2YmAuJyZ0oVm0ez0PcKHft {
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+._3xSu4jDzKPXnJp65DPLIPC {
+  padding-left: 10px;
+  flex: 1;
+}
+
+.V3nT23rct8_svp1joR3-M {
+  background: #eee;
+  height: 10px;
+  border-radius: 4px;
+  width: 55%;
+}
+</style><script charset="utf-8" src="./Wyze Cam RTSP_files/1-43af8adb68b570d01ec104093f18c409.js"></script><script charset="utf-8" src="./Wyze Cam RTSP_files/50-41798991f0245f49fd42a9b8b7a99c0c.js"></script><script type="text/javascript" src="./Wyze Cam RTSP_files/snippet.js" charset="utf-8" async="" id="ze-snippet"></script><script src="./Wyze Cam RTSP_files/answerBot.js"></script><script charset="utf-8" src="./Wyze Cam RTSP_files/VoteControls-8b452fa77709e524979aa18af7430b42.js"></script><script charset="utf-8" src="./Wyze Cam RTSP_files/vendors_CommentActions_PostActions_actions_subscribe-ff9dfddfff6c831198b585e90ebc1c16.js"></script><script charset="utf-8" src="./Wyze Cam RTSP_files/subscribe-31f0f3c3cd612a84bf995ce8736116ef.js"></script><style type="text/css">.solvvy-support-flow-loader{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;padding:75px!important}.solvvy-support-flow-loader .solvvy-spinner{box-sizing:content-box!important;width:50px!important;height:50px!important}.solvvy-support-flow-loader .solvvy-spinner .solvvy-spinner1{border:3px solid #999!important;border-top:3px solid transparent!important;border-left:3px solid transparent!important;border-radius:50px!important;width:50px!important;height:50px!important;animation:solvvyPreloaderKeyframesOne .95s infinite linear!important}.solvvy-support-flow-loader .solvvy-spinner .solvvy-spinner1,.solvvy-support-flow-loader .solvvy-spinner .solvvy-spinner2{box-sizing:content-box!important;background-color:transparent!important;opacity:.9!important;box-shadow:0 0 5px #999!important;margin:0 auto!important}.solvvy-support-flow-loader .solvvy-spinner .solvvy-spinner2{border:1px solid #999!important;border-top:1px solid transparent!important;border-left:1px solid transparent!important;border-radius:50px!important;width:30px!important;height:30px!important;position:relative!important;top:-44px!important;left:3px!important;animation:solvvyPreloaderKeyframesTwo .95s infinite linear!important}.solvvy-support-flow-loader .solvvy-message{margin-top:30px!important;text-transform:uppercase!important;text-align:center!important;color:#999!important}@-webkit-keyframes solvvyPreloaderKeyframesOne{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(1turn)}}@keyframes solvvyPreloaderKeyframesOne{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes solvvyPreloaderKeyframesTwo{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(-1turn)}}@keyframes solvvyPreloaderKeyframesTwo{0%{transform:rotate(0deg)}to{transform:rotate(-1turn)}}</style><style>.f03d2584f163e3a2a104f430a15af54f-css {
+}
+
+._0124f0de2dc35111e0d8b199e6bb02be-css {
+}
+
+._0d5695f717dac86f770885896d0cc158-css {
+}
+
+._32a324f27ebbfe9056eefe6cd6265e5e-css {
+}
+
+._9440ef67f6ee9ccf66b65592d4b77443-css {
+  background-color: #f8f9f9;
+}
+
+._047323d4ac69153cd407a6ff44f5dfbb-css {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+.f98a1b53ec6ec5c3dbe53172cbc6ff12-css {
+}
+
+.cd6ad42ca215ebe694a751df9ffe4754-css {
+}
+
+._770067c5bcccbf7afc960ad9271b90f2-css {
+}
+
+/* Reset styles for links within notifications */
+
+._17606607f52a4a3eebf0d5e8c75b3937-css a {
+  -webkit-animation: none 0s ease 0s 1 normal none running;
+          animation: none 0s ease 0s 1 normal none running;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+  border: medium none currentColor;
+  border-collapse: separate;
+  -webkit-border-image: none;
+       -o-border-image: none;
+          border-image: none;
+  border-radius: 0;
+  border-spacing: 0;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: #000;
+  -webkit-columns: auto;
+     -moz-columns: auto;
+          columns: auto;
+  -webkit-column-count: auto;
+     -moz-column-count: auto;
+          column-count: auto;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  grid-column-gap: normal;
+  -webkit-column-gap: normal;
+     -moz-column-gap: normal;
+          column-gap: normal;
+  -webkit-column-rule: medium none currentColor;
+     -moz-column-rule: medium none currentColor;
+          column-rule: medium none currentColor;
+  -webkit-column-span: 1;
+     -moz-column-span: 1;
+          column-span: 1;
+  -webkit-column-width: auto;
+     -moz-column-width: auto;
+          column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font-family: serif;
+  font-size: medium;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  height: auto;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  list-style: disc outside none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 2;
+  outline: medium none invert;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  -webkit-perspective: none;
+          perspective: none;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  position: static;
+  right: auto;
+  -moz-tab-size: 8;
+    -o-tab-size: 8;
+       tab-size: 8;
+  table-layout: auto;
+  text-align: left;
+  -moz-text-align-last: auto;
+       text-align-last: auto;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  -webkit-transition: none 0s ease 0s;
+  transition: none 0s ease 0s;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 2;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  all: initial;
+  font-size: inherit;
+  font-family: inherit;
+  color: #0072ef;
+  cursor: pointer;
+}
+
+._17606607f52a4a3eebf0d5e8c75b3937-css a:hover,
+._17606607f52a4a3eebf0d5e8c75b3937-css a:focus {
+  text-decoration: underline;
+}
+</style><style>._63983a716933a264792c2d8aeb1396b7-css {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 360px;
+  z-index: 2147483647;
+}
+
+[dir="rtl"] ._63983a716933a264792c2d8aeb1396b7-css {
+  right: 0;
+  left: 16px;
+}
+
+._63983a716933a264792c2d8aeb1396b7-css > * {
+  margin-bottom: 10px;
+}</style><style>:root {
+  --reach-menu-button: 1;
+}
+
+._1d3d0c8a3793ecefacd4ba2a0772dca2-css {
+  background: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  left: 0;
+  min-width: 170px;
+  outline: none;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+._16fa68852abd8d5df60fc8497abaa4fb-css {
+  color: #333;
+  cursor: pointer;
+  display: block;
+  padding: 7px 40px 7px 20px;
+  outline: none;
+  white-space: nowrap;
+}
+
+._16fa68852abd8d5df60fc8497abaa4fb-css:hover,
+._16fa68852abd8d5df60fc8497abaa4fb-css:focus {
+  background: #f3f3f3;
+  text-decoration: none;
+  color: #333;
+}
+
+.b1f4e10d366e3d2ffbe18224ab424752-css {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  color: rgb(150, 150, 150);
+  display: block;
+  font-weight: normal;
+  font-size: 11px;
+  padding: 5px 0;
+  margin: 5px 20px 10px 20px;
+}
+
+._7f6fabdea74918f58060f281634197ca-css {
+  display: inline-block;
+  width: 10px;
+}
+</style><style>:root {
+  --reach-menu-button: 1;
+}
+
+._5f315fd25ebbf79ba726ed0748886e96-css {
+  background: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  left: 0;
+  min-width: 170px;
+  outline: none;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+._27fdfcb036d2623da97973e67680bdc9-css {
+  color: #333;
+  cursor: pointer;
+  display: block;
+  padding: 7px 40px 7px 20px;
+  outline: none;
+  white-space: nowrap;
+}
+
+._27fdfcb036d2623da97973e67680bdc9-css:hover,
+._27fdfcb036d2623da97973e67680bdc9-css:focus {
+  background: #f3f3f3;
+  text-decoration: none;
+  color: #333;
+}
+
+._1b8afce3051052df255e3286f7013559-css {
+  display: inline-block;
+  width: 10px;
+}
+</style><style type="text/css" class="solvvy-instance-css" data-instance-id="c8092c8b-1f4b-48f6-8fe8-33e0e7164ce8">/*Add underline to solution content links*/
+#solvvy-v5-ui .feed .solution-card .card-body .solution-content a {
+  text-decoration: underline !important;
+}
+
+#solvvy-v5-ui .feed .solution-card .card-body .solution-content a:hover {
+  color: #01D0B9 !important;
+}
+
+#solvvy-v5-ui .announcement a.link:hover {
+  color: #FFFFFF !important;
+}
+
+/* patch for bug in 5.25.0 */
+.solvvy-v5-ui.feed-is-blocked .chat-form-container {
+    display: none !important;
+}</style><style>
+.alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 70px;
+  position: relative;
+  font-size: 16px; 
+}
+
+.alert,
+.alert * {
+  box-sizing: border-box; 
+}
+
+.alert--alert_info {
+  background-color: #44a9ef;
+  color: #fff; 
+}
+
+.alert--alert_info .alert__icon--notify {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTIgLjg3NkM1LjM4My44NzYgMCA1LjMxIDAgMTAuNzU5YzAgMi41NzMgMS4xNzcgNC45ODUgMy4zMjUgNi44MzFsLTIuNDEgNC44MTJhLjQ5OS40OTkgMCAwIDAgLjY1OC42NzZsNi40MzctMi45OTZjMS4yOC4zNzEgMi42MjIuNTYgMy45OS41NiA2LjYxNyAwIDEyLTQuNDM0IDEyLTkuODgzUzE4LjYxNy44NzYgMTIgLjg3NnptMCAxOC43NjZjLTEuMzM2IDAtMi42NDItLjE5Mi0zLjg4My0uNTcxYS41LjUgMCAwIDAtLjM1Ny4wMjVsLTUuMzA4IDIuNDcxIDEuOTQ2LTMuODg0YS41LjUgMCAwIDAtLjEzNS0uNjE0QzIuMTU5IDE1LjM4NiAxIDEzLjE0NSAxIDEwLjc1OSAxIDUuODYgNS45MzUgMS44NzYgMTIgMS44NzZzMTEgMy45ODQgMTEgOC44ODMtNC45MzUgOC44ODMtMTEgOC44ODN6Ii8+PHBhdGggZD0iTTcuNSA5SDE0YS41LjUgMCAwIDAgMC0xSDcuNWEuNS41IDAgMCAwIDAgMXpNMTcgMTFINy41YS41LjUgMCAwIDAgMCAxSDE3YS41LjUgMCAwIDAgMC0xek0xNyAxNEg3LjVhLjUuNSAwIDAgMCAwIDFIMTdhLjUuNSAwIDAgMCAwLTF6Ii8+PGc+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvZz48L3N2Zz4=); 
+}
+
+.alert--alert_success {
+  background-color: #1eca94;
+  color: #fff; 
+}
+  
+.alert--alert_success .alert__icon--notify {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjMgMTFjMC0xLjEwMy0uODk3LTItMi0yaC03LjM1OGMuMjg2LTEuMTc1Ljg1OC0zLjcxNy44NTgtNS4yODEgMC0uODgzLS4yNC0xLjYyMS0uNjk0LTIuMTMzQTIuMDk1IDIuMDk1IDAgMCAwIDEyLjI0NS44N2MtLjk5NSAwLTEuNzQ1LjcwMS0xLjc0NSAxLjYzIDAgNC40Mi0zLjY4OSA3LjUtNyA3LjVoLTNhLjUuNSAwIDAgMC0uNS41djlhLjUuNSAwIDAgMCAuNS41YzQuNTgzIDAgNi4xNTEuNjczIDcuNDExIDEuMjE0Ljk0MS40MDUgMS44MjkuNzg2IDMuNTg5Ljc4NkgxOGMxLjEwMyAwIDItLjg5NyAyLTIgMC0uNDExLS4xMjUtLjc5NC0uMzM5LTEuMTEyQTIuMDA1IDIuMDA1IDAgMCAwIDIxIDE3YzAtLjQxMS0uMTI1LS43OTQtLjMzOS0xLjExMkEyLjAwNSAyLjAwNSAwIDAgMCAyMiAxNGMwLS40MTEtLjEyNS0uNzk0LS4zMzktMS4xMTJBMi4wMDUgMi4wMDUgMCAwIDAgMjMgMTF6bS0yIDFoLTFhLjUuNSAwIDAgMCAwIDEgMS4wMDEgMS4wMDEgMCAwIDEgMCAyaC0xYS41LjUgMCAwIDAgMCAxIDEuMDAxIDEuMDAxIDAgMCAxIDAgMmgtMWEuNS41IDAgMCAwIDAgMSAxLjAwMSAxLjAwMSAwIDAgMSAwIDJoLTYuNWMtMS41NTQgMC0yLjI3OC0uMzExLTMuMTk0LS43MDVDNy4wMSAxOS43MzkgNS40MDcgMTkuMDUxIDEgMTkuMDAzVjExaDIuNWMzLjc4NCAwIDgtMy40OTEgOC04LjUgMC0uNDMzLjM4Ny0uNjMuNzQ1LS42My4xNzggMCAuNTIuMDQ5LjgxMi4zNzkuMjkuMzI3LjQ0My44MzUuNDQzIDEuNDcgMCAxLjkxMi0uOTc0IDUuNjE2LS45ODMgNS42NTNBLjQ5OC40OTggMCAwIDAgMTMgMTBoOGExLjAwMSAxLjAwMSAwIDAgMSAwIDJ6Ii8+PGc+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvZz48L3N2Zz4=); 
+}
+
+.alert--alert_warning {
+  background-color: #f8d88b;
+  color: #333; 
+}
+
+.alert--alert_warning .alert__icon--notify {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMzMzIj48cGF0aCBkPSJNMTEuNjk2IDFsLS4yMDUuMDAyQzUuMTI1IDEuMTEyLS4xMDcgNi4zNTQuMDAyIDEyLjcwMWMuMTEgNi4zMzggNS4wNzYgMTEuMzAyIDExLjMwNSAxMS4zMDJsLjIwMi0uMDAxYzYuNDQ1LS4xMTMgMTEuNi01LjM2MiAxMS40ODktMTEuNzAxQzIyLjg4OCA1Ljk2NCAxNy45MjQgMSAxMS42OTYgMXptLS4yMDUgMjIuMDAybC0uMTg1LjAwMWMtNS42NzggMC0xMC4yMDQtNC41MzMtMTAuMzA1LTEwLjMyQy45IDYuOTA2IDUuNjggMi4xMDIgMTEuNTA5IDIuMDAyTDExLjY5NiAyYzUuNjc3IDAgMTAuMjAxIDQuNTMyIDEwLjMwMiAxMC4zMTguMTAxIDUuNzg4LTQuNjEzIDEwLjU4MS0xMC41MDcgMTAuNjg0eiIvPjxwYXRoIGQ9Ik0xMS41IDE0LjVhLjUuNSAwIDAgMCAuNS0uNVY3YS41LjUgMCAwIDAtMSAwdjdhLjUuNSAwIDAgMCAuNS41eiIvPjxjaXJjbGUgY3g9IjExLjUiIGN5PSIxNy41IiByPSIxIi8+PGc+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvZz48L3N2Zz4=); 
+}
+
+.alert--alert_warning .alert__icon--close {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMzMzIj48cGF0aCBkPSJNMTIuNzA3IDEyTDIzLjg1NC44NTRhLjUuNSAwIDAgMC0uNzA3LS43MDdMMTIgMTEuMjkzLjg1NC4xNDZhLjUuNSAwIDAgMC0uNzA3LjcwN0wxMS4yOTMgMTIgLjE0NiAyMy4xNDZhLjUuNSAwIDAgMCAuNzA3LjcwN0wxMiAxMi43MDdsMTEuMTQ2IDExLjE0N2EuNS41IDAgMCAwIC43MDctLjcwN0wxMi43MDcgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPg==); 
+}
+
+.alert--alert_danger {
+  background-color: #ff7f7f;
+  color: #fff; 
+}
+
+.alert--alert_danger .alert__icon--notify {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTEgOS4xNTN2Ny42NTJhLjUuNSAwIDAgMCAxIDBWOS4xNTNhLjUuNSAwIDAgMC0xIDB6Ii8+PHBhdGggZD0iTTExLjk0NyAxLjI3NmMtLjE3LS4zMzktLjcyNS0uMzM5LS44OTUgMGwtMTEgMjJBLjUwMS41MDEgMCAwIDAgLjUgMjRoMjIuMDJhLjUuNSAwIDAgMCAuMzcyLS44MzRMMTEuOTQ3IDEuMjc2ek0xLjMwOSAyM0wxMS41IDIuNjE4IDIxLjY5MSAyM0gxLjMwOXoiLz48Y2lyY2xlIGN4PSIxMS41IiBjeT0iMjAiIHI9IjEiLz48Zz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9nPjwvc3ZnPg==); 
+}
+
+.alert__shape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; 
+}
+
+.alert__shape--main {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.alert__icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: cover; 
+}
+
+.alert__icon--notify {
+  width: 2em;
+  height: 2em; 
+}
+
+.alert__icon--close {
+  border: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 1.25em;
+  height: 1.25em;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTIuNzA3IDEyTDIzLjg1NC44NTRhLjUuNSAwIDAgMC0uNzA3LS43MDdMMTIgMTEuMjkzLjg1NC4xNDZhLjUuNSAwIDAgMC0uNzA3LjcwN0wxMS4yOTMgMTIgLjE0NiAyMy4xNDZhLjUuNSAwIDAgMCAuNzA3LjcwN0wxMiAxMi43MDdsMTEuMTQ2IDExLjE0N2EuNS41IDAgMCAwIC43MDctLjcwN0wxMi43MDcgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPg==); 
+}
+
+.alert__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1em 1em calc(1em - 8px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; 
+}
+
+.alert__body p {
+  margin-top: 0;
+  margin-bottom: 8px; 
+}
+
+.alert__body p:last-of-type {
+  margin-bottom: 0; 
+}
+
+.alert__title {
+  font-weight: bold;
+}
+
+.alert__title,
+.alert__text {
+  margin-bottom: 8px; 
+}
+</style></head>
+<body class=""><div class="js-alert-box">
+      <div id="360055639471" class="alert alert--alert_danger">
+        <div class="alert__shape alert__shape--main">
+          <i class="alert__icon alert__icon--notify"></i>
+        </div>
+        <div class="alert__body">
+          <div class="alert__title">Wyze Robot Vacuum / Wyze Lock users must update the Wyze app.</div>
+          <div class="alert__text"><p><span>You must update the Wyze app by 1/20/21 to continue using Wyze Lock and Wyze Robot Vacuum's smart features. <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360055639571" target="_blank" rel="noopener">Learn more in this article.</a></span></p></div>
+        </div>
+        <div class="alert__shape alert__shape--close">
+          <button class="alert__icon alert__icon--close" aria-hidden="true" data-alert-close="360055639471"></button>
+        </div>
+      </div>
+    
+      <div id="360054632131" class="alert alert--alert_warning">
+        <div class="alert__shape alert__shape--main">
+          <i class="alert__icon alert__icon--notify"></i>
+        </div>
+        <div class="alert__body">
+          <div class="alert__title">Expect delays: Higher than usual call volumes.</div>
+          <div class="alert__text"><p><span>Our support team is experiencing higher than usual call volumes. Please expect delays as we take each call as it is received.</span></p></div>
+        </div>
+        <div class="alert__shape alert__shape--close">
+          <button class="alert__icon alert__icon--close" aria-hidden="true" data-alert-close="360054632131"></button>
+        </div>
+      </div>
+    </div>
+  
+  
+
+  <a class="skip-navigation" tabindex="1" href="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP#main-content">Skip to main content</a>
+<div class="layout">
+  <div class="layout__head">
+    <div class="wyze-header">
+      <div class="page-header header--layout-2 header__menu--position-1 header--full-width ox-sticky" data-role="OXsticky">
+        <div class="header-wrapper">
+          <div class="container">
+
+            <div class="header__content-wrapper">
+              
+              <div class="header__content">
+                <div class="logo__container"> <strong class="logo"> <img src="./Wyze Cam RTSP_files/wyze-logo-white.svg" alt=""> <img class="retina" src="./Wyze Cam RTSP_files/wyze-logo-white_1.svg" alt=""> </strong> </div>
+                <div class="flex-left" data-move-mobile="header.main.left">
+                  <div data-toggle-menu="" data-action="toggle-mobile-nav" class="action slide-out-menu--mobile">
+                    <div class="hamburger-menu-icon-small"><span></span><span></span><span></span></div>
+                    <span>Navigation</span>
+                  </div>
+                  <nav class="ox-megamenu ox-move-item ox-move-item-store.menu " data-action="navigation" data-ox-mm-anim-type="fade">
+                    <ul class="ox-megamenu-navigation">
+                      <li class="level0  category-item first level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left">
+                        <a href="https://wyze.com/shop-wyze" class="level-top"><span class="name">Shop</span></a></li>
+                      <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-right"><a target="_blank" href="https://forums.wyzecam.com/" class="level-top"><span class="name">Forums</span></a></li>
+                      <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a href="https://support.wyzecam.com/" class="level-top"><span class="name">Support</span></a>
+                      </li>
+                      <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a href="https://wyze.com/inspired-by-wyze" class="level-top"><span class="name">Explore</span></a></li>
+                      <li class="level0  category-item last level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left">
+                        <a target="_blank" href="https://services.wyze.com/" class="level-top"><span class="name">Services</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="flex-right flex-row" data-move-mobile="header.main.right">
+                  
+                  <div class="header__search">
+                    <form role="search" class="header__search-bar is-hidden" data-search="" data-instant="true" autocomplete="off" action="https://wyzelabs.zendesk.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search..." autocomplete="off" aria-label="Search...">
+<input type="submit" name="commit" value="Search"></form>
+                    <button type="button" role="button" class="header__btn-search">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24">
+                        <g fill="none" fill-rule="evenodd" transform="translate(-6 -2)">
+                          <circle cx="19.889" cy="11.611" r="8" stroke="#ffffff" stroke-width="2" transform="rotate(45 19.89 11.61)"></circle>
+                          <path fill="#ffffff" fill-rule="nonzero" d="M9.34328327,15.6566781 L11.3432833,15.6566781 L11.3432833,25.6606781 C11.3432833,26.2106781 10.8992833,26.6566781 10.3432833,26.6566781 C9.79128327,26.6566781 9.34328327,26.2116781 9.34328327,25.6606781 L9.34328327,15.6566781 Z" transform="rotate(45 10.343 21.157)"></path>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/signin?return_to=https%3A%2F%2Fwyzelabs.zendesk.com%2Fhc%2Fen-us%2Farticles%2F360026245231-Wyze-Cam-RTSP" data-auth-action="signin" style="display:block; margin: 0 0 0 20px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0C5.383 0 0 5.383 0 12C0 18.617 5.383 24 12 24C18.617 24 24 18.617 24 12C24 5.383 18.617 0 12 0ZM18.698 19.404C18.034 17.431 16.198 16 14 16H10C7.802 16 5.968 17.432 5.304 19.405C3.281 17.574 2 14.937 2 12C2 6.486 6.486 2 12 2C17.514 2 22 6.486 22 12C22 14.936 20.72 17.573 18.698 19.404Z" fill="#F7FAFC"></path>
+                      <path d="M12 5C9.791 5 8 6.791 8 9V10C8 12.209 9.791 14 12 14C14.209 14 16 12.209 16 10V9C16 6.791 14.209 5 12 5Z" fill="#F7FAFC"></path>
+                    </svg>
+                  </a>
+                  
+                  <div data-block="minicart" class="minicart-wrapper "><a class="action showcart" href="https://wyze.com/checkout/cart/" data-bind="scope: &#39;minicart_content&#39;"><svg xmlns="http://www.w3.org/2000/svg" class="minicart-icon-1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0 24 24" height="24" width="24">
+                        <g transform="matrix(1,0,0,1,0,0)">
+                          <path d="M 6,19.125h9.921c0.732,0,1.357-0.528,1.479-1.249l2.637-15.5c0.123-0.721,0.748-1.248,1.479-1.248H22.5" stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M 7.875,21.375c0.207,0,0.375,0.168,0.375,0.375s-0.168,0.375-0.375,0.375S7.5,21.957,7.5,21.75S7.668,21.375,7.875,21.375" stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M 15.375,21.375c0.207,0,0.375,0.168,0.375,0.375s-0.168,0.375-0.375,0.375S15,21.957,15,21.75S15.168,21.375,15.375,21.375" stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M 17.953,14.625H5.882c-1.376,0-2.576-0.937-2.91-2.272l-1.45-5.8c-0.101-0.402,0.144-0.809,0.546-0.91 c0.06-0.015,0.121-0.022,0.182-0.022h17.23" stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg> <span class="counter qty"><span class="counter-number">
+                          <!-- ko text: getCartParam('summary_count') -->
+                          <!-- /ko --></span></span></a> </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div data-menu="" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-left active ox-slideout-active" tabindex="-1" role="dialog" style="display: block;" aria-describedby="ui-id-3">
+        <div class="ox-sections no-display ox-nav-sections ui-dialog-content ui-widget-content ox-modal-content" id="ui-id-3" style="display: block;" data-count-tabs="2">
+          <div class="ox-section-items ox-nav-sections-items" role="tablist">
+            <div data-tab="1" class="ox-section-item-title ox-nav-sections-item-title active" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.menu" aria-selected="false" aria-expanded="true" tabindex="0"><a class="ox-nav-sections-item-switch" data-toggle="switch">Menu</a></div>
+            <div data-tab-content="1" class="ox-section-item-content ox-nav-sections-item-content" id="store.menu" data-role="content" data-move-mobile="store.menu" role="tabpanel" aria-hidden="false">
+              <nav class="ox-megamenu ox-move-item ox-move-item-store.menu " data-action="navigation" data-ox-mm-anim-type="fade">
+                <ul class="ox-megamenu-navigation">
+                  <li class="level0  category-item first level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a href="https://wyzelabs.zendesk.com/shop-wyze" class="level-top"><span class="name">Shop</span></a></li>
+                  <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-right"><a target="_blank" href="https://forums.wyzecam.com/" class="level-top"><span class="name">Forums</span></a></li>
+                  <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a href="https://support.wyzecam.com/" class="level-top"><span class="name">Support</span></a></li>
+                  <li class="level0  category-item level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a href="https://wyzelabs.zendesk.com/inspired-by-wyze" class="level-top"><span class="name">Explore</span></a></li>
+                  <li class="level0  category-item last level-top ox-dropdown--simple" data-ox-mm-a-h="menu-left"><a target="_blank" href="https://services.wyze.com/" class="level-top"><span class="name">Services</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div data-tab="2" class="ox-section-item-title ox-nav-sections-item-title" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.links" aria-selected="false" aria-expanded="false" tabindex="0"><a class="ox-nav-sections-item-switch" data-toggle="switch">Account</a>
+            </div>
+            <div data-tab-content="2" class="ox-section-item-content ox-nav-sections-item-content" id="store.links" data-role="content" data-move-mobile="store.links" role="tabpanel" aria-hidden="true" style="display: none;">
+              <ul class="header__toplinks header links ox-move-item ox-move-item-store.links" data-bind="scope: &#39;customer&#39;">
+                
+                <li><a href="https://wyze.com/checkout/">Checkout</a></li> <!-- ko if: customer().fullname -->
+                <!-- /ko -->
+                <!-- ko ifnot: customer().fullname -->
+                
+                <li><a href="https://wyzelabs.zendesk.com/hc/en-us/signin?return_to=https%3A%2F%2Fwyzelabs.zendesk.com%2Fhc%2Fen-us%2Farticles%2F360026245231-Wyze-Cam-RTSP" data-auth-action="signin" style="display:block">Log In</a></li>
+                
+
+                
+                <!-- /ko -->
+              </ul>
+            </div>
+            <form role="search" class="mobile-menu__search" data-search="" data-instant="true" autocomplete="off" action="https://wyzelabs.zendesk.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search..." autocomplete="off" aria-label="Search...">
+<input type="submit" name="commit" value="Search"></form>
+            <div class="ox-section-item-title ox-nav-sections-item-title no-display" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.settings" aria-selected="false" aria-expanded="false" tabindex="0" style="display: none;"><a class="ox-nav-sections-item-switch" data-toggle="switch" href="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP#store.settings">Settings</a></div>
+            <div class="ox-section-item-content ox-nav-sections-item-content" id="store.settings" data-role="content" data-move-mobile="store.settings" role="tabpanel" aria-hidden="true" style="display: none;"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layout__main">
+
+  <main role="main">
+    <div class="container article-page">
+  <div class="container-inner">
+    <div class="row clearfix">
+      <div class="column column--sm-8">
+        <ol class="breadcrumbs">
+  
+    <li title="Wyze">
+      
+        <a href="https://wyzelabs.zendesk.com/hc/en-us">Wyze</a>
+      
+    </li>
+  
+    <li title="Cameras">
+      
+        <a href="https://wyzelabs.zendesk.com/hc/en-us/categories/360004553112-Cameras">Cameras</a>
+      
+    </li>
+  
+    <li title="Wyze Cam v1/v2 &amp; Pan">
+      
+        <a href="https://wyzelabs.zendesk.com/hc/en-us/sections/360011338871-Wyze-Cam-v1-v2-Pan">Wyze Cam v1/v2 &amp; Pan</a>
+      
+    </li>
+  
+    <li title="Wyze Cam Getting Started">
+      
+        <a href="https://wyzelabs.zendesk.com/hc/en-us/sections/360001777851-Wyze-Cam-Getting-Started">Wyze Cam Getting Started</a>
+      
+    </li>
+  
+    <li title="Wyze Cam Features">
+      
+        <a href="https://wyzelabs.zendesk.com/hc/en-us/sections/360004966992-Wyze-Cam-Features">Wyze Cam Features</a>
+      
+    </li>
+  
+</ol>
+
+      </div>
+      <div class="column column--sm-4">
+        <div class="search-box search-box--small">
+          <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="https://wyzelabs.zendesk.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search"></form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="article-container" id="main-content">
+      <div class="article-container__column article-container__sidenav">
+        <div data-sidenav="{&quot;mobileBreakpoint&quot;: 991}"></div>
+      </div>
+      <div class="article-container__column article-container__article">
+        <article class="article clearfix" data-article="" itemscope="" itemtype="http://schema.org/Article">
+          <header class="article-header">
+            <h1 class="article__title" itemprop="name">
+              
+              Wyze Cam RTSP
+            </h1>
+
+            <div class="article-meta">
+              <div class="article-meta__col article-meta__col--main">
+                <div class="entry-info ">
+                  
+                    <div class="entry-info__avatar">
+                      <div class="avatar avatar--agent">
+                        <img class="user-avatar user-avatar--default" src="./Wyze Cam RTSP_files/Me.jpg" alt="Avatar">
+                      </div>
+                    </div>
+                  
+                  <div class="entry-info__content">
+                    
+                      <b class="author">
+                        
+                        Matthew
+                        
+                      </b>
+                    
+                    <div class="meta"><time datetime="2021-01-20T18:04:29Z" title="2021-01-20 13:04" data-datetime="calendar">Today at 13:04</time></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </header>
+
+          <div class="article__body markdown" itemprop="articleBody">
+            <div class="callout">RTSP is not a stock feature with the Wyze Cam and is a beta feature that requires the installation of different firmware.&nbsp;&nbsp;Using the RTSP firmware will prevent the camera from supporting any future functions or features in the Wyze app.<br><br></div>
+<h2><strong>What is RTSP?</strong></h2>
+<p>Real Time Streaming Protocol (RTSP) is a standard network protocol designed to&nbsp;establish and control media sessions between endpoints. Due to hardware&nbsp;limitation, RTSP could only be achieved as a separate firmware version for both Wyze Cam v2&nbsp;and Wyze Cam Pan.</p>
+<h2><strong>Support for RTSP</strong></h2>
+<p>We don't have the resources to keep developing two branches of firmware for Wyze Cam v2 and Wyze Cam Pan. <span>At this time, we are not committing to ongoing maintenance for RTSP firmware. We will deliver security updates as needed.</span></p>
+<section class="pdf_page">
+<div class="textlayer">
+<h2><strong>How to install the RTSP Firmware</strong></h2>
+<ol>
+<li>Download the <a href="https://download.wyzecam.com/firmware/rtsp/demo_v2_rtsp_4.28.4.49.bin.zip" target="_blank" rel="noopener">Wyze Cam v2 RTSP file</a>, or the <a href="https://download.wyzecam.com/firmware/rtsp/demo_Pan_rtsp_4.29.4.49.bin.zip" target="_blank" rel="noopener">Wyze Cam Pan RTSP file</a> (Wyze Cam v3 RTSP is not available yet and we do not have an estimate for when it will be ready but it is planned for later).</li>
+<li>Unzip the file, rename the contents to '<strong>demo.bin</strong>', and transfer them to a microSD card's root directory.</li>
+<li>Unplug your Wyze Cam and insert the prepared microSD card.<br><img src="./Wyze Cam RTSP_files/microSD (1).png" alt="microSD__1_.png" width="385" height="267"></li>
+<li>Hold the camera's <strong>Setup</strong> button while plugging in the USB cable and continue to hold the <strong>Setup</strong> button until the light turns solid blue.<br><img src="./Wyze Cam RTSP_files/图片4 (1).png" alt="__4__1_.png"><img src="./Wyze Cam RTSP_files/setup-button.jpg" alt="setup-button.jpg" width="241" height="200"></li>
+<li>Once the light is solid blue, release the <strong>Setup</strong> button and wait for 3-4 minutes. The camera will reboot, and the status light will change during this time.<br>
+<ul>
+<li><em>Note: The "Solid Blue" in this case is not the same as the one normally seen on the camera. Instead, both the blue and yellow LEDs will be on at once, making it appear to be a lighter blue.<br><br></em></li>
+</ul>
+</li>
+<li>Once this process is finished, you should see the Wyze Cam in your Home tab without going through the setup process as long as it was previously paired with your account.</li>
+</ol>
+<h2><strong>How to start using RTSP</strong></h2>
+<ol>
+<li>Once your Wyze Cam is back online, you can access the RTSP function from the live stream (Wyze app version 2.3 or later) under <strong>Settings -&gt; Advanced Settings -&gt; RTSP</strong></li>
+<li>The app will automatically check if the installed firmware version is RTSP compatible. If not, please repeat the installation process above.</li>
+<li>Next, turn on the <strong>RTSP toggle</strong></li>
+<li>You'll be prompted to set up a username and password for this Wyze Cam. Both the username and password should be 4 – 10 characters without special characters (only a-z, and 0-9)
+<ul>
+<li>PLEASE NOTE - This username and password is unique to just this camera. Please either use something that's easy to remember or take note of them somewhere, as these will be needed to access the camera's stream via RTSP</li>
+</ul>
+</li>
+<li>Click “<strong>Generate URL</strong>”, and the RTSP URL will show on the next screen. Use this for streaming through any RTSP compatible player on the same local network as the Wyze Cam.</li>
+</ol>
+</div>
+</section>
+          </div>
+
+          <div class="article__attachments">
+            
+          </div>
+
+        </article>
+
+        <footer class="article-footer clearfix">
+          
+            <div class="article-vote">
+              <span class="article-vote-question">Was this article helpful?</span>
+              <div class="article-vote-controls">
+                <button type="button" class="btn article-vote-controls__item article-vote-controls__item--up" aria-label="This article was helpful" aria-pressed="false">
+                  <span class="fa fa-thumbs-up"></span>
+                </button>
+                <button type="button" class="btn article-vote-controls__item article-vote-controls__item--down" aria-label="This article was not helpful" aria-pressed="false">
+                  <span class="fa fa-thumbs-down"></span>
+                </button>
+              </div>
+              <small class="article-vote-count">
+                <span class="article-vote-label">3206 out of 3879 found this helpful</span>
+              </small>
+            </div>
+          
+        </footer>
+
+        
+
+        <div class="article-more-questions">Have more questions? <a class=" solvvy-support-flow-link" href="https://wyzelabs.zendesk.com/hc/en-us/requests/new" style="cursor: pointer;">Submit a request</a><a href="https://wyzelabs.zendesk.com/hc/en-us/requests/new" class="solvvy-replaced-link" style="display: none;">Submit a request</a></div>
+
+        
+
+        
+      </div>
+      <div class="article-container__column article-container__toc">
+        <div data-toc="{&quot;mobileBreakpoint&quot;: 991}"></div>
+      </div>
+      
+        <div class="article-container__column article-container__sidebar article-sidebar">
+          <section class="section-articles">
+            <h3 class="section-articles__title">Articles in this section</h3>
+            <ul class="section-articles__list">
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360032627212-Wyze-Cam-and-Wyze-Cam-Pan-Features" class="section-articles__link ">Wyze Cam and Wyze Cam Pan Features</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360029775472-View-a-Live-Stream" class="section-articles__link ">View a Live Stream</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360030986591-Notifications" class="section-articles__link ">Notifications</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360030119251-Event-Recording-and-Schedule" class="section-articles__link ">Event Recording and Schedule</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360030147091-Detection-Settings-and-Zones" class="section-articles__link ">Detection Settings and Zones</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360029809312-Motion-Tagging" class="section-articles__link ">Motion Tagging</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360029811772-Events" class="section-articles__link ">Events</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360030119511-Night-Vision" class="section-articles__link ">Night Vision</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360030739272-Turning-your-Camera-on-off" class="section-articles__link ">Turning your Camera on/off</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="https://wyzelabs.zendesk.com/hc/en-us/articles/360035598572-2-Way-Audio" class="section-articles__link ">2-Way Audio</a>
+                </li>
+              
+            </ul>
+            
+              <a href="https://wyzelabs.zendesk.com/hc/en-us/sections/360004966992-Wyze-Cam-Features" class="btn btn--default">See more</a>
+            
+          </section>
+        </div>
+      
+    </div>
+  </div>
+</div>
+  <div><iframe url="about:blank" data-testid="abe-iframe" id="automaticAnswers" class="zEWidget-automaticAnswers" title="Feedback for article suggestion" tabindex="-1" aria-hidden="true" style="border: none; background: transparent; transform: translateZ(0px); position: fixed; opacity: 0; bottom: 0px; margin: 0px 6px 6px 0px; z-index: 2147483647; right: 0px; height: 188px; width: 410px; transition-property: none; transition-timing-function: unset; top: -9999px;" src="./Wyze Cam RTSP_files/saved_resource.html"></iframe></div></main>
+
+  </div>
+<div class="layout__footer">
+  
+  <footer class="footer container">
+    <div class="container-inner footer__inner" data-footer-inner="">
+      <div class="footer__col copyright">
+        <p>© 2020 Wyze Labs, Inc Amazon, Alexa, Echo Spot and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Google, Inc., Google, Google Home, Google Home Mini, G logo, The Google Assistant built-in, and related marks and logos are trademarks of Google, Inc. All rights reserved.</p>
+        
+          <p>Theme by <a href="https://www.lotusthemes.com/" target="_blank">Lotus
+              Themes</a></p>
+        
+      </div>
+      <div class="footer__col footer__col--social-links">
+        
+          <a href="https://www.facebook.com/WyzeCam/" target="_blank" class="footer-social-link fab fa-facebook"></a>
+        
+        
+          <a href="hhttps://www.instagram.com/wyze/" target="_blank" class="footer-social-link fab fa-instagram"></a>
+        
+        
+          <a href="https://twitter.com/wyzecam" target="_blank" class="footer-social-link fab fa-twitter"></a>
+        
+        
+          <a href="ttps://www.youtube.com/channel/UCeMXXZCPez2yOSYBceHWm-Q" target="_blank" class="footer-social-link fab fa-youtube"></a>
+        
+        
+          <a href="https://medium.com/wyzelabs" target="_blank" class="footer-social-link fab fa-medium-m"></a>
+        
+        
+      </div>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<button class="scroll-to-top fa fa-angle-up" data-scroll-to-top=""></button>
+<script type="text/javascript" src="./Wyze Cam RTSP_files/solvvy.js" async=""></script>
+
+
+
+
+  <!-- / -->
+
+  
+  <script src="./Wyze Cam RTSP_files/en-us.770d7ad900cb4da7170c.js"></script>
+  <script src="./Wyze Cam RTSP_files/host.js" data-brand-id="360000784872" data-return-to="https://wyzelabs.zendesk.com/hc/en-us/articles/360026245231-Wyze-Cam-RTSP" data-theme="hc" data-locale="en-us" data-auth-origin="360000784872,false,true"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"wyzelabs","environment":"production","name":"Wyze"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:I0Q4qxs0i3A2Mz+sLyktx+eBR/ZyNAK0IpHVN/w1dy70Gu/qLuTh55SHrCP5pROwqjQXow1QnSVn6v5Sq1zchw==","shared_csrf_token":null},"settings":{},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGwrCG+IPNNTADoKX21ldGF7CzoPYWNjb3VudF9pZGkDm9UjOhNoZWxwX2NlbnRlcl9pZGwrCB+prtFTADoNYnJhbmRfaWRsKwjoCbjRUwA6DHVzZXJfaWQwOhN1c2VyX3JvbGVfbmFtZUkiDkFOT05ZTU9VUwY7BlQ7AEkiCmVuLXVzBjsGVA==--f561e03d4f902186e2c5d78d8e48822d66ba432e","url":"https://wyzelabs.zendesk.com/hc/tracking/events?locale=en-us"},"current_record_id":"360026245231","current_record_url":"/hc/en-us/articles/360026245231-Wyze-Cam-RTSP","current_record_title":"Wyze Cam RTSP","search_results_count":null,"current_text_direction":"ltr","current_brand":{"account_id":2348443,"brand_id":360000784872,"brand_url":"https://wyzelabs.zendesk.com","url":"https://wyzelabs.zendesk.com/api/v2/brands/360000784872.json","name":"Wyze","logo":"","subdomain":"wyzelabs","host_mapping":"support.wyzecam.com","help_center_state":"enabled","ticket_form_ids":null,"active":true,"default":true,"has_help_center":true,"created_at":"2018-06-14T19:03:39Z","updated_at":"2020-10-05T18:48:14Z","id":360000784872,"route_id":2315417},"current_brand_url":"https://wyzelabs.zendesk.com","current_host_mapping":"support.wyzecam.com","current_path":"/hc/en-us/articles/360026245231-Wyze-Cam-RTSP","authentication_domain":"https://wyzelabs.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"290eeb4fe644a9c04fb9a4a1f06c44f5a2fbfd9c","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":true,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","manage_content_url":"https://wyzelabs.zendesk.com/hc/en-us","arrange_content_url":"https://wyzelabs.zendesk.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://wyzelabs.zendesk.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://wyzelabs.zendesk.com/knowledge/user_segments?brand_id=360000784872","has_gather":true,"has_community_enabled":false,"has_community_badges":false,"has_user_segments":true,"has_answer_bot_web_form_enabled":true,"has_answer_bot_web_form_modal_v2":false,"billing_url":"/access/return_to?return_to=https://wyzelabs.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"/access/return_to?return_to=https://wyzelabs.zendesk.com/agent/admin/answer_bot","is_account_owner":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd807091-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":true,"arrange_articles_url":"https://wyzelabs.zendesk.com/knowledge/arrange?brand_id=360000784872","article_verification_url":"https://wyzelabs.zendesk.com/knowledge/verification?brand_id=360000784872","has_article_verification":true,"guide_language_settings_url":"https://wyzelabs.zendesk.com/hc/admin/language_settings?locale=en-us","docs_importer_url":"https://wyzelabs.zendesk.com/knowledge/import_articles?brand_id=360000784872","community_badges_url":"https://wyzelabs.zendesk.com/knowledge/community_badges?brand_id=360000784872","community_settings_url":"https://wyzelabs.zendesk.com/knowledge/community_settings?brand_id=360000784872","gather_plan_state":"subscribed","search_settings_url":"https://wyzelabs.zendesk.com/knowledge/search_settings?brand_id=360000784872","has_multibrand_search_in_plan":true,"theming_api_version":2,"has_pci_credit_card_custom_field":true,"current_brand_id":360000784872,"help_center_restricted":false,"current_brand_active":true,"is_assuming_someone_else":false,"flash_messages":[]};
+</script>
+
+  
+  <script src="./Wyze Cam RTSP_files/hc_enduser-b22f0f5a07c6bb005fca0945bf952797.js"></script>
+  <script type="text/javascript" src="./Wyze Cam RTSP_files/script.js"></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'614d77b2ff03ec15',m:'3e7c63a5c6743ae3c861afc5b6348f8f184f76ad-1611194699-1800-AZXB+zxWrs5RoxSN+6s16yyk6X0cnk6qxyz3p1M36z3RXIbI6n2LVrH6v46DYSsyAzpqNRigQMhc+VD3l89pKzoCE4utea1qguusAcmQYZmzTNQQxornP9e9r/+f1j0J62soLRQUUs0XmYLlbEC+kNt9U8RhoaK+3TjN4GLQBykp',s:[0x460ceec828,0x459de6d8cc],}})();</script>
+<div><div class="_63983a716933a264792c2d8aeb1396b7-css"></div></div><script src="./Wyze Cam RTSP_files/solvvy.customization.js" async=""></script><script src="./Wyze Cam RTSP_files/solvvy.v5.js" async=""></script><iframe data-product="web_widget" title="No content" tabindex="-1" aria-hidden="true" src="./Wyze Cam RTSP_files/saved_resource(1).html" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div id="solvvy-v5-container" class="solvvy-v5-container"><style>/*!
+* CleanSlate
+*   github.com/premasagar/cleanslate
+*
+*//*
+    An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+    by Premasagar Rose
+        dharmafly.com
+
+    license
+        opensource.org/licenses/mit-license.php
+
+    **
+
+    v0.10.1
+
+*/
+
+/* == BLANKET RESET RULES == */
+
+/* HTML 4.01 */
+.solvvy-cleanslate, .solvvy-cleanslate h1, .solvvy-cleanslate h2, .solvvy-cleanslate h3, .solvvy-cleanslate h4, .solvvy-cleanslate h5, .solvvy-cleanslate h6, .solvvy-cleanslate p, .solvvy-cleanslate td, .solvvy-cleanslate dl, .solvvy-cleanslate tr, .solvvy-cleanslate dt, .solvvy-cleanslate ol, .solvvy-cleanslate form, .solvvy-cleanslate select, .solvvy-cleanslate option, .solvvy-cleanslate pre, .solvvy-cleanslate div, .solvvy-cleanslate table,  .solvvy-cleanslate th, .solvvy-cleanslate tbody, .solvvy-cleanslate tfoot, .solvvy-cleanslate caption, .solvvy-cleanslate thead, .solvvy-cleanslate ul, .solvvy-cleanslate li, .solvvy-cleanslate address, .solvvy-cleanslate blockquote, .solvvy-cleanslate dd, .solvvy-cleanslate fieldset, .solvvy-cleanslate li, .solvvy-cleanslate iframe, .solvvy-cleanslate strong, .solvvy-cleanslate legend, .solvvy-cleanslate em, .solvvy-cleanslate summary, .solvvy-cleanslate cite, .solvvy-cleanslate span, .solvvy-cleanslate input, .solvvy-cleanslate sup, .solvvy-cleanslate label, .solvvy-cleanslate dfn, .solvvy-cleanslate object, .solvvy-cleanslate big, .solvvy-cleanslate q, .solvvy-cleanslate samp, .solvvy-cleanslate acronym, .solvvy-cleanslate small, .solvvy-cleanslate img, .solvvy-cleanslate strike, .solvvy-cleanslate code, .solvvy-cleanslate sub, .solvvy-cleanslate ins, .solvvy-cleanslate textarea, .solvvy-cleanslate button, .solvvy-cleanslate var, .solvvy-cleanslate a, .solvvy-cleanslate abbr, .solvvy-cleanslate applet, .solvvy-cleanslate del, .solvvy-cleanslate kbd, .solvvy-cleanslate tt, .solvvy-cleanslate b, .solvvy-cleanslate i, .solvvy-cleanslate hr,
+
+/* HTML5 - Sept 2013 taken from MDN https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list */
+.solvvy-cleanslate article, .solvvy-cleanslate aside, .solvvy-cleanslate figure, .solvvy-cleanslate figcaption, .solvvy-cleanslate footer, .solvvy-cleanslate header, .solvvy-cleanslate menu, .solvvy-cleanslate nav, .solvvy-cleanslate section, .solvvy-cleanslate time, .solvvy-cleanslate mark, .solvvy-cleanslate audio, .solvvy-cleanslate video, .solvvy-cleanslate abbr, .solvvy-cleanslate address, .solvvy-cleanslate area, .solvvy-cleanslate blockquote, .solvvy-cleanslate canvas, .solvvy-cleanslate caption, .solvvy-cleanslate cite, .solvvy-cleanslate code, .solvvy-cleanslate colgroup, .solvvy-cleanslate col, .solvvy-cleanslate datalist, .solvvy-cleanslate fieldset, .solvvy-cleanslate main, .solvvy-cleanslate map, .solvvy-cleanslate meta, .solvvy-cleanslate optgroup, .solvvy-cleanslate output, .solvvy-cleanslate progress {
+    background-attachment:scroll !important;
+    background-color:transparent !important;
+    background-image:none !important; /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position:0 0 !important;
+    background-repeat:repeat !important;
+    border-color:black !important;
+    border-color:currentColor !important; /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius:0 !important;
+    border-style:none !important;
+    border-width:medium !important;
+    bottom:auto !important;
+    clear:none !important;
+    clip:auto !important;
+    color:inherit !important;
+    counter-increment:none !important;
+    counter-reset:none !important;
+    cursor:auto !important;
+    direction:inherit !important;
+    display:inline !important;
+    float:none !important;
+    /* SOLVVY CHANGE - the following affects ability to set font-family throughout the UI */
+    /* font-family: inherit !important;*/ /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit !important;
+    font-style:inherit !important;
+    font-variant:normal !important;
+    font-weight:inherit !important;
+    height:auto !important;
+    left:auto !important;
+    letter-spacing:normal !important;
+    line-height:inherit !important;
+    list-style-type: inherit !important; /* Could set list-style-type to none */
+    list-style-position: outside !important;
+    list-style-image: none !important;
+    margin:0 !important;
+    max-height:none !important;
+    max-width:none !important;
+    min-height:0 !important;
+    min-width:0 !important;
+    opacity:1;
+    outline:invert none medium !important;
+    overflow:visible !important;
+    padding:0 !important;
+    position:static !important;
+    quotes: "" "" !important;
+    right:auto !important;
+    table-layout:auto !important;
+    text-align:inherit !important;
+    text-decoration:inherit !important;
+    text-indent:0 !important;
+    text-transform:none !important;
+    top:auto !important;
+    unicode-bidi:normal !important;
+    vertical-align:baseline !important;
+    visibility:inherit !important;
+    white-space:normal !important;
+    width:auto !important;
+    word-spacing:normal !important;
+    z-index:auto !important;
+
+    /* CSS3 */
+    /* Including all prefixes according to http://caniuse.com/ */
+    /* CSS Animations don't cascade, so don't require resetting */
+    -webkit-background-origin: padding-box !important;
+            background-origin: padding-box !important;
+    -webkit-background-clip: border-box !important;
+            background-clip: border-box !important;
+    -webkit-background-size: auto !important;
+       -moz-background-size: auto !important;
+            background-size: auto !important;
+    -webkit-border-image: none !important;
+       -moz-border-image: none !important;
+         -o-border-image: none !important;
+            border-image: none !important;
+    -webkit-border-radius:0 !important;
+       -moz-border-radius:0 !important;
+            border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+    -webkit-column-count: auto !important;
+       -moz-column-count: auto !important;
+            column-count: auto !important;
+    -webkit-column-gap: normal !important;
+       -moz-column-gap: normal !important;
+            column-gap: normal !important;
+    -webkit-column-rule: medium none black !important;
+       -moz-column-rule: medium none black !important;
+            column-rule: medium none black !important;
+    -webkit-column-span: 1 !important;
+       -moz-column-span: 1 !important; /* doesn't exist yet but probably will */
+            column-span: 1 !important;
+    -webkit-column-width: auto !important;
+       -moz-column-width: auto !important;
+            column-width: auto !important;
+    font-feature-settings: normal !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    -webkit-hyphens: manual !important;
+       -moz-hyphens: manual !important;
+            hyphens: manual !important;
+    -webkit-perspective: none !important;
+       -moz-perspective: none !important;
+        -ms-perspective: none !important;
+         -o-perspective: none !important;
+            perspective: none !important;
+    -webkit-perspective-origin: 50% 50% !important;
+       -moz-perspective-origin: 50% 50% !important;
+        -ms-perspective-origin: 50% 50% !important;
+         -o-perspective-origin: 50% 50% !important;
+            perspective-origin: 50% 50% !important;
+    -webkit-backface-visibility: visible !important;
+       -moz-backface-visibility: visible !important;
+        -ms-backface-visibility: visible !important;
+         -o-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+    text-shadow: none !important;
+    -webkit-transition: all 0s ease 0s !important;
+            transition: all 0s ease 0s !important;
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
+            transform: none !important;
+    -webkit-transform-origin: 50% 50% !important;
+       -moz-transform-origin: 50% 50% !important;
+        -ms-transform-origin: 50% 50% !important;
+         -o-transform-origin: 50% 50% !important;
+            transform-origin: 50% 50% !important;
+    -webkit-transform-style: flat !important;
+       -moz-transform-style: flat !important;
+        -ms-transform-style: flat !important;
+         -o-transform-style: flat !important;
+            transform-style: flat !important;
+    word-break: normal !important;
+}
+
+/* == BLOCK-LEVEL == */
+/* HTML 4.01 */
+.solvvy-cleanslate, .solvvy-cleanslate h3, .solvvy-cleanslate h5, .solvvy-cleanslate p, .solvvy-cleanslate h1, .solvvy-cleanslate dl, .solvvy-cleanslate dt, .solvvy-cleanslate h6, .solvvy-cleanslate ol, .solvvy-cleanslate form, .solvvy-cleanslate option, .solvvy-cleanslate pre, .solvvy-cleanslate div, .solvvy-cleanslate h2, .solvvy-cleanslate caption, .solvvy-cleanslate h4, .solvvy-cleanslate ul, .solvvy-cleanslate address, .solvvy-cleanslate blockquote, .solvvy-cleanslate dd, .solvvy-cleanslate fieldset, .solvvy-cleanslate hr,
+
+/* HTML5 new elements */
+.solvvy-cleanslate article, .solvvy-cleanslate dialog, .solvvy-cleanslate figure, .solvvy-cleanslate footer, .solvvy-cleanslate header, .solvvy-cleanslate hgroup, .solvvy-cleanslate menu, .solvvy-cleanslate nav, .solvvy-cleanslate section, .solvvy-cleanslate audio, .solvvy-cleanslate video, .solvvy-cleanslate address, .solvvy-cleanslate blockquote, .solvvy-cleanslate colgroup, .solvvy-cleanslate main, .solvvy-cleanslate progress, .solvvy-cleanslate summary {
+    display:block !important;
+}
+.solvvy-cleanslate h1, .solvvy-cleanslate h2, .solvvy-cleanslate h3, .solvvy-cleanslate h4, .solvvy-cleanslate h5, .solvvy-cleanslate h6 {
+    font-weight: bold !important;
+}
+.solvvy-cleanslate h1 {
+    /* font-size: 2em !important; */
+    /* padding: .67em 0 !important; */
+    padding: 0 !important;
+}
+.solvvy-cleanslate h2 {
+    font-size: 1.5em !important;
+    padding: .83em 0 !important;
+}
+.solvvy-cleanslate h3 {
+    font-size: 1.17em !important;
+    padding: .83em 0 !important;
+}
+.solvvy-cleanslate h4 {
+    font-size: 1em !important;
+}
+.solvvy-cleanslate h5 {
+    font-size: .83em !important;
+}
+.solvvy-cleanslate p {
+    margin: 1em 0 !important;
+}
+.solvvy-cleanslate table {
+    display: table !important;
+}
+.solvvy-cleanslate thead {
+    display: table-header-group !important;
+}
+.solvvy-cleanslate tbody {
+    display: table-row-group !important;
+}
+.solvvy-cleanslate tfoot {
+    display: table-footer-group !important;
+}
+.solvvy-cleanslate tr {
+    display: table-row !important;
+}
+.solvvy-cleanslate th, .solvvy-cleanslate td {
+    display: table-cell !important;
+    padding: 2px !important;
+}
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+.solvvy-cleanslate ol, .solvvy-cleanslate ul {
+    margin: 1em 0 !important;
+}
+.solvvy-cleanslate ul li, .solvvy-cleanslate ul ul li, .solvvy-cleanslate ul ul ul li, .solvvy-cleanslate ol li, .solvvy-cleanslate ol ol li, .solvvy-cleanslate ol ol ol li, .solvvy-cleanslate ul ol ol li, .solvvy-cleanslate ul ul ol li, .solvvy-cleanslate ol ul ul li, .solvvy-cleanslate ol ol ul li {
+    list-style-position: inside !important;
+    margin-top: .08em !important;
+}
+.solvvy-cleanslate ol ol, .solvvy-cleanslate ol ol ol, .solvvy-cleanslate ul ul, .solvvy-cleanslate ul ul ul, .solvvy-cleanslate ol ul, .solvvy-cleanslate ol ul ul, .solvvy-cleanslate ol ol ul, .solvvy-cleanslate ul ol, .solvvy-cleanslate ul ol ol, .solvvy-cleanslate ul ul ol {
+    padding-left: 40px !important;
+    margin: 0 !important;
+}
+/* helper for general navigation */
+.solvvy-cleanslate nav ul, .solvvy-cleanslate nav ol {
+    list-style-type:none !important;
+
+}
+.solvvy-cleanslate ul, .solvvy-cleanslate menu {
+    list-style-type:disc !important;
+}
+.solvvy-cleanslate ol {
+    list-style-type:decimal !important;
+}
+.solvvy-cleanslate ol ul, .solvvy-cleanslate ul ul, .solvvy-cleanslate menu ul, .solvvy-cleanslate ol menu, .solvvy-cleanslate ul menu, .solvvy-cleanslate menu menu {
+    list-style-type:circle !important;
+}
+.solvvy-cleanslate ol ol ul, .solvvy-cleanslate ol ul ul, .solvvy-cleanslate ol menu ul, .solvvy-cleanslate ol ol menu, .solvvy-cleanslate ol ul menu, .solvvy-cleanslate ol menu menu, .solvvy-cleanslate ul ol ul, .solvvy-cleanslate ul ul ul, .solvvy-cleanslate ul menu ul, .solvvy-cleanslate ul ol menu, .solvvy-cleanslate ul ul menu, .solvvy-cleanslate ul menu menu, .solvvy-cleanslate menu ol ul, .solvvy-cleanslate menu ul ul, .solvvy-cleanslate menu menu ul, .solvvy-cleanslate menu ol menu, .solvvy-cleanslate menu ul menu, .solvvy-cleanslate menu menu menu {
+    list-style-type:square !important;
+}
+.solvvy-cleanslate li {
+    display:list-item !important;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height:auto !important;
+    min-width:auto !important;
+    padding-left: 20px !important; /* replace -webkit-padding-start: 40px; */
+}
+.solvvy-cleanslate strong {
+    font-weight:bold !important;
+}
+.solvvy-cleanslate em {
+    font-style:italic !important;
+}
+.solvvy-cleanslate kbd, .solvvy-cleanslate samp, .solvvy-cleanslate code, .solvvy-cleanslate pre {
+  font-family:monospace !important;
+}
+.solvvy-cleanslate a, .solvvy-cleanslate a *, .solvvy-cleanslate input[type=submit], .solvvy-cleanslate input[type=button], .solvvy-cleanslate input[type=radio], .solvvy-cleanslate input[type=checkbox], .solvvy-cleanslate select, .solvvy-cleanslate button {
+    cursor:pointer !important;
+}
+.solvvy-cleanslate button, .solvvy-cleanslate input[type=submit] {
+    text-align: center !important;
+    padding: 2px 6px 3px !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    /* SOLVVY CHANGE */
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+    font-size: small !important;
+    background: white !important;
+    /* SOLVVY CHANGE */
+    /* -webkit-appearance: push-button !important; */
+    /* color: buttontext !important; */
+    /* border: 1px #a6a6a6 solid !important; */
+    /* background: lightgrey !important; /1* Old browsers *1/ */
+    outline: initial !important;
+}
+.solvvy-cleanslate button:active, .solvvy-cleanslate input[type=submit]:active, .solvvy-cleanslate input[type=button]:active, .solvvy-cleanslate button:active {
+	background: rgb(59,103,158) !important; /* Old browsers */
+	border-color: #5259b0 !important;
+}
+.solvvy-cleanslate button {
+    padding: 1px 6px 2px 6px !important;
+    /* SOLVVY CHANGE */
+    margin: 0 !important;
+    /* margin-right: 5px !important; */
+}
+.solvvy-cleanslate input[type=hidden] {
+    display:none !important;
+}
+/* restore form defaults */
+.solvvy-cleanslate textarea {
+    -webkit-appearance: textarea !important;
+    background: white !important;
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+    /* SOLVVY CHANGE */
+    /* margin-left: 4px !important; */
+    /* padding: 2px !important; */
+    /* font-size: 11px !important; */
+    /* font-family: arial, helvetica, sans-serif !important; */
+    /* line-height: 13px !important; */
+    resize: both !important;
+}
+.solvvy-cleanslate select, .solvvy-cleanslate textarea, .solvvy-cleanslate input {
+    border:1px solid #ccc !important;
+}
+.solvvy-cleanslate select {
+    font-size: 11px !important;
+    /* SOLVVY CHANGE */
+    /* font-family: helvetica, arial, sans-serif !important; */
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+    display: inline-block;
+}
+.solvvy-cleanslate textarea:focus, .solvvy-cleanslate input:focus {
+    outline: auto 5px -webkit-focus-ring-color !important;
+    outline: initial !important;
+}
+.solvvy-cleanslate input[type=text] {
+    background: white !important;
+    padding: 1px !important;
+    /* SOLVVY CHANGE - allow stylesheet to set font-family for all UI */
+    /* font-family: initial !important; */
+    font-size: small !important;
+}
+.solvvy-cleanslate input[type=checkbox], .solvvy-cleanslate input[type=radio] {
+    border: 1px #2b2b2b solid !important;
+    border-radius: 4px !important;
+}
+.solvvy-cleanslate input[type=checkbox], .solvvy-cleanslate input[type=radio] {
+    outline: initial !important;
+}
+.solvvy-cleanslate input[type=radio] {
+    margin: 2px 2px 3px 2px !important;
+}
+.solvvy-cleanslate abbr[title], .solvvy-cleanslate acronym[title], .solvvy-cleanslate dfn[title] {
+    cursor:help !important;
+    border-bottom-width:1px !important;
+    border-bottom-style:dotted !important;
+}
+.solvvy-cleanslate ins {
+    background-color:#ff9 !important;
+    color:black !important;
+}
+.solvvy-cleanslate del {
+    text-decoration: line-through !important;
+}
+.solvvy-cleanslate blockquote, .solvvy-cleanslate q  {
+    quotes:none !important; /* HTML5 */
+}
+.solvvy-cleanslate blockquote:before, .solvvy-cleanslate blockquote:after, .solvvy-cleanslate q:before, .solvvy-cleanslate q:after, .solvvy-cleanslate li:before, .solvvy-cleanslate li:after  {
+    content:"" !important;
+}
+.solvvy-cleanslate input, .solvvy-cleanslate select {
+    vertical-align:middle !important;
+}
+
+.solvvy-cleanslate table {
+    border-collapse:collapse !important;
+    border-spacing:0 !important;
+}
+.solvvy-cleanslate hr {
+    display:block !important;
+    height:1px !important;
+    border:0 !important;
+    border-top:1px solid #ccc !important;
+    margin:1em 0 !important;
+}
+.solvvy-cleanslate *[dir=rtl] {
+    direction: rtl !important;
+}
+.solvvy-cleanslate mark {
+    background-color:#ff9 !important;
+    color:black !important;
+    font-style:italic !important;
+    font-weight:bold !important;
+}
+.solvvy-cleanslate menu {
+    padding-left: 40px !important;
+    padding-top: 8px !important;
+}
+
+/* additional helpers */
+.solvvy-cleanslate [hidden],
+.solvvy-cleanslate template {
+    display: none !important;
+}
+.solvvy-cleanslate abbr[title] {
+    border-bottom: 1px dotted !important;
+}
+.solvvy-cleanslate sub, .solvvy-cleanslate sup {
+    font-size: 75% !important;
+    line-height: 0 !important;
+    position: relative !important;
+    vertical-align: baseline !important;
+}
+.solvvy-cleanslate sup {
+    top: -0.5em !important;
+}
+.solvvy-cleanslate sub {
+    bottom: -0.25em !important;
+}
+.solvvy-cleanslate img {
+    border: 0 !important;
+}
+.solvvy-cleanslate figure {
+    margin: 0 !important;
+}
+.solvvy-cleanslate textarea {
+    overflow: auto !important;
+    vertical-align: top !important;
+}
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+.solvvy-cleanslate {
+    font-size: medium !important;
+    line-height: 1 !important;
+    direction:ltr !important;
+    text-align: left !important; /* for IE, Opera */
+    text-align: start !important; /* recommended W3C Spec */
+    /* SOLVVY CHANGE */
+    /* font-family: "Times New Roman", Times, serif !important; */ /* Override this with whatever font-family is required */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: black !important;
+    font-style:normal !important;
+    font-weight:normal !important;
+    text-decoration:none !important;
+    list-style-type:disc !important;
+}
+
+.solvvy-cleanslate pre {
+    white-space:pre !important;
+}
+
+/* SOLVVY CHANGE - added svg styles */
+.solvvy-cleanslate svg {
+  max-width: none !important;
+  max-height: none !important;
+}
+</style><style>.solvvy-v5-widget {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  width: 60px !important;
+  height: 60px !important;
+  padding: 2px 7px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  -webkit-box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.35) !important;
+  cursor: pointer !important;
+  z-index: 1900000000 !important;
+}
+.solvvy-v5-widget * {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+.solvvy-v5-widget .widget-icon {
+  position: relative !important;
+  left: 3px !important;
+  top: 2px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.solvvy-v5-widget .widget-icon svg * {
+  stroke: white !important;
+  fill: white !important;
+}
+.solvvy-v5-widget.position-bottom-right,
+.solvvy-v5-widget.position-full-screen {
+  right: 20px !important;
+}
+.solvvy-v5-widget.position-bottom-left {
+  left: 20px !important;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+.solvvy-v5-ui {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-flow: column !important;
+          flex-flow: column !important;
+  position: fixed !important;
+  bottom: 100px !important;
+  width: 400px !important;
+  max-height: 70vh !important;
+  border: none !important;
+  border-radius: 6px !important;
+  -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.35) !important;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px !important;
+  -webkit-transition: min-height 0.5s ease-in-out !important;
+  -o-transition: min-height 0.5s ease-in-out !important;
+  transition: min-height 0.5s ease-in-out !important;
+  z-index: 1900000000 !important;
+}
+.solvvy-v5-ui.position-bottom-right {
+  right: 20px !important;
+}
+.solvvy-v5-ui.position-bottom-left {
+  left: 20px !important;
+}
+.solvvy-v5-ui.position-full-screen {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+.solvvy-v5-ui.expanding,
+.solvvy-v5-ui.expanded {
+  min-height: 70vh !important;
+}
+.solvvy-v5-ui.expanded {
+  height: 70vh !important;
+}
+.solvvy-v5-ui.hidden {
+  display: none !important;
+}
+.solvvy-v5-ui input {
+  font-size: 16px !important;
+}
+.solvvy-v5-ui .buttons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.solvvy-v5-ui .buttons button,
+.solvvy-v5-ui .buttons a {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 250px !important;
+          flex: 1 250px !important;
+}
+.solvvy-v5-ui .buttons button + button,
+.solvvy-v5-ui .buttons button + a,
+.solvvy-v5-ui .buttons a + button,
+.solvvy-v5-ui .buttons a + a {
+  margin-left: 15px !important;
+}
+.solvvy-v5-ui .vertical-buttons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+.solvvy-v5-ui .vertical-buttons button + button,
+.solvvy-v5-ui .vertical-buttons button + a,
+.solvvy-v5-ui .vertical-buttons a + button,
+.solvvy-v5-ui .vertical-buttons a + a {
+  margin-top: 8px !important;
+}
+.solvvy-v5-ui .workflow-card button + button,
+.solvvy-v5-ui .workflow-card button + a,
+.solvvy-v5-ui .workflow-card a + button,
+.solvvy-v5-ui .workflow-card a + a {
+  margin-top: 8px !important;
+}
+.solvvy-v5-ui .top-bar {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100% !important;
+  min-height: 35px !important;
+  background: white !important;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+  -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.5) !important;
+  z-index: 1 !important;
+}
+.solvvy-v5-ui .top-bar .tab-buttons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  color: #595959 !important;
+}
+.solvvy-v5-ui .top-bar .tab-buttons button {
+  margin: 5px 0 5px 10px !important;
+  padding: 5px 10px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.solvvy-v5-ui .top-bar .close-button {
+  display: none !important;
+}
+.solvvy-v5-ui .top-bar svg {
+  float: right !important;
+  position: relative !important;
+  top: 7px !important;
+  right: 5px !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+.solvvy-v5-ui .tab {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+}
+.solvvy-v5-ui .tab:not(.selected) {
+  display: none !important;
+}
+.solvvy-v5-ui.expanded:not(.solvvy-v5-ui.desktop) .top-bar {
+  position: fixed !important;
+}
+.solvvy-v5-ui .main-content {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+  padding: 10px !important;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+  background: #F2F2F2 !important;
+  overflow-y: scroll !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
+}
+.solvvy-v5-ui.position-full-screen .main-content {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.feed-is-blocked .main-content {
+  border-radius: 6px !important;
+}
+.solvvy-v5-ui.feed-is-blocked .greeting-card {
+  display: none !important;
+}
+.solvvy-v5-ui.feed-is-blocked .chat-form-container,
+.solvvy-v5-ui.feed-is-blocked .chat-form {
+  display: none !important;
+}
+.solvvy-v5-ui.tab-shown .main-content,
+.solvvy-v5-ui.tab-shown .chat-form {
+  display: none !important;
+}
+.solvvy-v5-ui .announcement,
+.solvvy-v5-ui .greeting-card {
+  border-radius: 3px !important;
+  color: white !important;
+}
+.solvvy-v5-ui .announcement {
+  margin-bottom: 10px !important;
+  padding: 20px !important;
+}
+.solvvy-v5-ui .announcement .title {
+  margin-bottom: 5px !important;
+  font-weight: 600 !important;
+}
+.solvvy-v5-ui .announcement .link {
+  margin-top: 15px !important;
+  color: white !important;
+}
+.solvvy-v5-ui .announcement .link * {
+  color: white !important;
+}
+.solvvy-v5-ui .announcement .show-more-button {
+  display: block !important;
+  width: calc(100% + 40px) !important;
+  margin: 15px -20px 0 -20px !important;
+  padding-top: 15px !important;
+  border-top: 1px solid white !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+}
+.solvvy-v5-ui .announcement .show-more-button svg {
+  position: relative !important;
+  top: 6px !important;
+  left: 8px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+.solvvy-v5-ui .announcement .show-more-button svg * {
+  stroke: white !important;
+  stroke-width: 1.5px !important;
+}
+.solvvy-v5-ui .pre-question-form {
+  margin-bottom: 10px !important;
+  padding: 18px !important;
+  border-radius: 3px !important;
+  color: white !important;
+}
+.solvvy-v5-ui.feed-is-blocked .pre-question-form {
+  margin-bottom: 0 !important;
+  padding: 8px !important;
+}
+.solvvy-v5-ui .greeting-card {
+  position: relative !important;
+  padding: 35px 20px !important;
+}
+.solvvy-v5-ui .greeting-card .greeting {
+  text-align: center !important;
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+.solvvy-v5-ui .suggestions {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  margin-top: 20px !important;
+}
+.solvvy-v5-ui .suggestion {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+  height: 30px !important;
+  margin: 0 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 20px !important;
+  border-color: white !important;
+  background: transparent !important;
+  font-size: 13px !important;
+  line-height: 24px !important;
+  color: white !important;
+}
+.solvvy-v5-ui .suggestion b,
+.solvvy-v5-ui .suggestion strong {
+  font-weight: bold !important;
+}
+.solvvy-v5-ui .suggestion i {
+  font-style: italic !important;
+}
+.solvvy-v5-ui .suggestion:hover {
+  background: white !important;
+}
+.solvvy-v5-ui .suggestions:not(.stacked) .suggestion:not(:first-child) {
+  margin-left: 8px !important;
+}
+.solvvy-v5-ui .suggestions.stacked {
+  display: block !important;
+}
+.solvvy-v5-ui .suggestions.stacked .suggestion {
+  display: block !important;
+  width: 100% !important;
+}
+.solvvy-v5-ui .suggestions.stacked .suggestion:not(:first-child) {
+  margin-top: 8px !important;
+}
+.solvvy-v5-ui .feed > * {
+  position: relative !important;
+  margin-top: 10px !important;
+  border-radius: 3px !important;
+}
+.solvvy-v5-ui .feed .card-appear {
+  top: 1000px !important;
+}
+.solvvy-v5-ui .feed .card-appear-active {
+  top: 0px !important;
+  -webkit-transition: top 0.5s ease-in-out !important;
+  -o-transition: top 0.5s ease-in-out !important;
+  transition: top 0.5s ease-in-out !important;
+}
+.solvvy-v5-ui.expanded .feed {
+  padding-bottom: 150% !important;
+}
+.solvvy-v5-ui .chat-form-container {
+  width: 100% !important;
+  height: 60px !important;
+  position: relative !important;
+}
+.solvvy-v5-ui .chat-form {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  width: inherit !important;
+  height: 60px !important;
+  min-height: 60px !important;
+  margin: 0 !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  background: white !important;
+  font-weight: 400 !important;
+  -webkit-box-shadow: 0px -4px 10px 1px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px -4px 10px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.solvvy-v5-ui .chat-form .chat-field {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 !important;
+          flex: 1 !important;
+  height: 100% !important;
+  min-height: 60px !important;
+  margin: 0 !important;
+  padding: 18px 12px !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-right: none !important;
+  border-color: transparent !important;
+  border-bottom-left-radius: 6px !important;
+  background-color: white !important;
+  resize: none !important;
+  z-index: 1 !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+.solvvy-v5-ui .chat-form .chat-field::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+.solvvy-v5-ui .chat-form .submit-button {
+  height: 100% !important;
+  margin: 0 !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-left: none !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+  border-bottom-right-radius: 6px !important;
+  cursor: pointer !important;
+}
+.solvvy-v5-ui .chat-form .submit-button * {
+  cursor: pointer !important;
+}
+.solvvy-v5-ui .chat-form .submit-button .background-layer {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+  border-bottom-right-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+}
+.solvvy-v5-ui .chat-form .submit-button svg {
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 4px !important;
+}
+.solvvy-v5-ui .chat-form .submit-button svg * {
+  fill: white !important;
+}
+.solvvy-v5-ui .chat-form .submit-button:disabled {
+  cursor: default !important;
+}
+.solvvy-v5-ui .chat-form .submit-button:disabled * {
+  cursor: default !important;
+}
+.solvvy-v5-ui .chat-form .submit-button:disabled .background-layer {
+  opacity: 0.3 !important;
+}
+.solvvy-v5-ui .chat-form .submit-button:disabled svg * {
+  fill: #aaa !important;
+}
+.solvvy-v5-ui .chat-form.focused .submit-button svg * {
+  fill: white !important;
+}
+.solvvy-v5-ui.mobile,
+.solvvy-v5-ui.position-full-screen {
+  bottom: 0px !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+.solvvy-v5-ui.mobile.expanding,
+.solvvy-v5-ui.position-full-screen.expanding,
+.solvvy-v5-ui.mobile.expanded,
+.solvvy-v5-ui.position-full-screen.expanded {
+  min-height: 100% !important;
+}
+.solvvy-v5-ui.mobile.expanded,
+.solvvy-v5-ui.position-full-screen.expanded {
+  height: 100% !important;
+}
+.solvvy-v5-ui.mobile.expanded .feed,
+.solvvy-v5-ui.position-full-screen.expanded .feed {
+  padding-bottom: 150% !important;
+}
+.solvvy-v5-ui.mobile .top-bar,
+.solvvy-v5-ui.position-full-screen .top-bar {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.mobile .close-button,
+.solvvy-v5-ui.position-full-screen .close-button {
+  display: block !important;
+  margin-left: auto !important;
+}
+.solvvy-v5-ui.mobile .main-content,
+.solvvy-v5-ui.position-full-screen .main-content {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.mobile .main-content .greeting-card,
+.solvvy-v5-ui.position-full-screen .main-content .greeting-card {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.mobile .chat-form,
+.solvvy-v5-ui.position-full-screen .chat-form {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.mobile .chat-form .chat-field,
+.solvvy-v5-ui.position-full-screen .chat-form .chat-field {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.mobile .chat-form .submit-button,
+.solvvy-v5-ui.position-full-screen .chat-form .submit-button,
+.solvvy-v5-ui.mobile .chat-form .submit-button .background-layer,
+.solvvy-v5-ui.position-full-screen .chat-form .submit-button .background-layer {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui.preview .main-content {
+  border-radius: 0 !important;
+}
+.solvvy-v5-ui {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+}
+.solvvy-v5-ui * {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.solvvy-v5-ui button {
+  -webkit-appearance: none !important;
+}
+.solvvy-v5-ui textarea {
+  width: 100% !important;
+  min-height: 7.5em !important;
+  padding: 8px !important;
+  text-align: left !important;
+}
+.solvvy-v5-ui a {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+.solvvy-v5-ui a.button {
+  display: block !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+.solvvy-v5-ui button svg,
+.solvvy-v5-ui a.button svg {
+  display: inline !important;
+  position: relative !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+.solvvy-v5-ui b {
+  font-weight: bold !important;
+}
+.solvvy-v5-ui i {
+  font-style: italic !important;
+}
+.solvvy-v5-ui h1 {
+  font-weight: 700 !important;
+}
+.solvvy-v5-ui img {
+  max-width: 100% !important;
+  max-height: 400px !important;
+}
+.solvvy-v5-ui a:focus,
+.solvvy-v5-ui button:focus,
+.solvvy-v5-ui input:focus,
+.solvvy-v5-ui select:focus,
+.solvvy-v5-ui textarea:focus,
+.solvvy-v5-ui .focused {
+  outline: none !important;
+}
+.solvvy-v5-ui select {
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.solvvy-v5-ui select::-ms-expand {
+  display: none !important;
+}
+.solvvy-v5-ui ol li {
+  text-indent: -1.1em !important;
+}
+.solvvy-v5-ui ul {
+  margin: 1em 0.5em !important;
+}
+.solvvy-v5-ui ul li {
+  text-indent: -1.4em !important;
+}
+.solvvy-v5-ui ol li p,
+.solvvy-v5-ui ul li p {
+  display: inline !important;
+}
+</style><style>
+
+      
+    .solvvy-v5-widget {
+      background: #00d0b9 !important;
+    }
+
+    .solvvy-v5-widget:hover {
+      background: #0d4c45 !important;
+    }
+
+    .solvvy-v5-widget.close-button {
+      background: #0d4c45 !important;
+    }
+
+    .solvvy-v5-widget .widget-icon svg * { stroke: #ffffff !important; fill: #ffffff !important; }
+    .solvvy-v5-widget { border-radius: 6px !important; }
+  
+
+      #solvvy-v5-ui.preview {
+        border: 3px solid #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui.preview.mobile {
+        border-radius: 0 !important;
+      }
+
+      #solvvy-v5-ui.preview:not(.mobile)::before {
+        content: "Preview";
+        position: relative !important;
+        width: calc(100% + 4px) !important;
+        top: -1px !important;
+        left: -2px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        border-top-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        background: #00d0b9 !important;
+        color: white !important;
+
+      }
+
+      #solvvy-v5-ui.preview:not(.mobile):not(.expanded)::before {
+        position: relative !important;
+        top: -1px !important;
+      }
+
+      #solvvy-v5-ui.preview.mobile::after {
+        content: "Preview";
+        text-align: center !important;
+        font-size: 12px !important;
+        background: #00d0b9 !important;
+        color: white !important;
+      }
+
+      #solvvy-v5-ui .top-bar svg * {
+        stroke: #00d0b9 !important;
+        fill: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .top-bar .tab-button.selected,
+      #solvvy-v5-ui .top-bar .tab-button:hover {
+        color: #00d0b9 !important;
+        text-decoration: underline !important;
+      }
+
+      #solvvy-v5-ui .top-bar .tab-button:active {
+        background: #00d0b9 !important;
+        color: white !important;
+      }
+
+      #solvvy-v5-ui .chat-form.focused .chat-field {
+        border-color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .chat-form.focused .submit-button {
+        border-color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .chat-form.focused .submit-button .background-layer {
+        background: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui a {
+        color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .user-action-card {
+        background: #0d4c45 !important;
+      }
+
+      #solvvy-v5-ui .buttons button,
+      #solvvy-v5-ui .vertical-buttons button,
+      #solvvy-v5-ui .buttons a,
+      #solvvy-v5-ui .vertical-buttons a,
+      #solvvy-v5-ui .normal-button
+      {
+        width: 100% !important;
+        padding: 8px 6px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+      }
+
+      #solvvy-v5-ui .buttons button:not(.dark),
+      #solvvy-v5-ui .vertical-buttons button:not(.dark),
+      #solvvy-v5-ui .buttons a:not(.dark),
+      #solvvy-v5-ui .vertical-buttons a:not(.dark),
+      #solvvy-v5-ui .normal-button:not(.dark)
+      {
+        border-color: #00d0b9 !important;
+        color: #00d0b9 !important;
+        background: white !important;
+      }
+
+      #solvvy-v5-ui .buttons button:not(.dark) svg,
+      #solvvy-v5-ui .vertical-buttons button:not(.dark) svg,
+      #solvvy-v5-ui .buttons a:not(.dark) svg,
+      #solvvy-v5-ui .vertical-buttons a:not(.dark) svg,
+      #solvvy-v5-ui .normal-button:not(.dark) svg
+      {
+        stroke: #00d0b9 !important;
+        fill: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .buttons button.dark:not(:hover),
+      #solvvy-v5-ui .vertical-buttons button.dark:not(:hover),
+      #solvvy-v5-ui .buttons a.dark:not(:hover),
+      #solvvy-v5-ui .vertical-buttons a.dark:not(:hover),
+      #solvvy-v5-ui .normal-button.dark:not(:hover)
+      {
+        border-color: white;
+        color: white !important;
+      }
+
+      #solvvy-v5-ui .buttons button.dark:not(:hover),
+      #solvvy-v5-ui .vertical-buttons button.dark:not(:hover),
+      #solvvy-v5-ui .buttons a.dark:not(:hover),
+      #solvvy-v5-ui .vertical-buttons a.dark:not(:hover),
+      #solvvy-v5-ui .normal-button.dark:not(:hover)
+      {
+        stroke: white !important;
+        fill: white !important;
+      }
+
+      #solvvy-v5-ui .buttons button:not(.dark):not([disabled]):hover,
+      #solvvy-v5-ui .vertical-buttons button:not(.dark):not([disabled]):hover,
+      #solvvy-v5-ui .buttons a:not(.dark):not([disabled]):hover,
+      #solvvy-v5-ui .vertical-buttons a:not(.dark):not([disabled]):hover,
+      #solvvy-v5-ui .normal-button:not(.dark):not([disabled]):hover,
+
+      #solvvy-v5-ui .buttons button.selected:not(.dark),
+      #solvvy-v5-ui .vertical-buttons button.selected:not(.dark),
+      #solvvy-v5-ui .buttons a.selected:not(.dark),
+      #solvvy-v5-ui .vertical-buttons a.selected:not(.dark),
+      #solvvy-v5-ui .normal-button.selected:not(.dark)
+      {
+        color: white !important;
+        background: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .buttons button:not(.dark):not([disabled]):hover svg,
+      #solvvy-v5-ui .vertical-buttons button:not(.dark):not([disabled]):hover svg,
+      #solvvy-v5-ui .buttons a:not(.dark):not([disabled]):hover svg,
+      #solvvy-v5-ui .vertical-buttons a:not(.dark):not([disabled]):hover svg,
+      #solvvy-v5-ui .normal-button:not(.dark):not([disabled]):hover svg,
+
+      #solvvy-v5-ui .buttons button.selected:not(.dark) svg,
+      #solvvy-v5-ui .vertical-buttons button.selected:not(.dark) svg,
+      #solvvy-v5-ui .buttons a.selected:not(.dark) svg,
+      #solvvy-v5-ui .vertical-buttons a.selected:not(.dark) svg,
+      #solvvy-v5-ui .normal-button.selected:not(.dark) svg
+      {
+        stroke: white !important;
+        fill: white !important;
+      }
+
+      #solvvy-v5-ui .buttons button.dark:not([disabled]):hover,
+      #solvvy-v5-ui .vertical-buttons button.dark:not([disabled]):hover,
+      #solvvy-v5-ui .buttons a.dark:not([disabled]):hover,
+      #solvvy-v5-ui .vertical-buttons a.dark:not([disabled]):hover,
+      #solvvy-v5-ui .normal-button.dark:not([disabled]):hover,
+
+      #solvvy-v5-ui .buttons button.dark.selected,
+      #solvvy-v5-ui .vertical-buttons button.dark.selected,
+      #solvvy-v5-ui .buttons a.dark.selected,
+      #solvvy-v5-ui .vertical-buttons a.dark.selected,
+      #solvvy-v5-ui .normal-button.dark.selected
+      {
+        background: white !important;
+      }
+
+      #solvvy-v5-ui .buttons button.dark:not([disabled]):hover svg,
+      #solvvy-v5-ui .vertical-buttons button.dark:not([disabled]):hover svg,
+      #solvvy-v5-ui .buttons a.dark:not([disabled]):hover svg,
+      #solvvy-v5-ui .vertical-buttons a.dark:not([disabled]):hover svg,
+      #solvvy-v5-ui .normal-button.dark:not([disabled]):hover svg,
+
+      #solvvy-v5-ui .buttons button.dark.selected svg,
+      #solvvy-v5-ui .vertical-buttons button.dark.selected svg,
+      #solvvy-v5-ui .buttons a.dark.selected svg,
+      #solvvy-v5-ui .vertical-buttons a.dark.selected svg,
+      #solvvy-v5-ui .normal-button.dark.selected svg
+      {
+        stroke: #00d0b9 !important;
+        fill: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .buttons button:active,
+      #solvvy-v5-ui .vertical-buttons button:active,
+      #solvvy-v5-ui .buttons a:active,
+      #solvvy-v5-ui .vertical-buttons a:active,
+      #solvvy-v5-ui .normal-button:active
+      {
+        opacity: 0.75 !important;
+      }
+
+      #solvvy-v5-ui .buttons button[disabled],
+      #solvvy-v5-ui .vertical-buttons button[disabled],
+      #solvvy-v5-ui .buttons a[disabled],
+      #solvvy-v5-ui .vertical-buttons a[disabled],
+      #solvvy-v5-ui .normal-button[disabled]
+      {
+        opacity: 0.5 !important;
+        cursor: default !important;
+      }
+
+      #solvvy-v5-ui .button-color-focus:focus {
+        box-shadow: 0 0 0 2px #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .primary-color-background {
+        background: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .secondary-color-background {
+        background: #0d4c45 !important;
+      }
+
+      #solvvy-v5-ui .button-color-background {
+        background: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .primary-color-color {
+        color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .secondary-color-color {
+        color: #0d4c45 !important;
+      }
+
+      #solvvy-v5-ui .button-color-color {
+        color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .white-color {
+        color: white !important;
+      }
+
+      #solvvy-v5-ui .primary-color-hover-color:hover {
+        color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .secondary-color-hover-color:hover {
+        color: #0d4c45 !important;
+      }
+
+      #solvvy-v5-ui .button-color-hover-color:hover {
+        color: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui.feed-is-blocked .main-content {
+        background: #00d0b9 !important;
+      }
+
+      #solvvy-v5-ui .main-content .pre-question-form .buttons button,
+      #solvvy-v5-ui .main-content .pre-question-form .vertical-buttons button
+      {
+        background: transparent !important;
+        border-color: white !important;
+        color: white !important;
+      }
+
+      #solvvy-v5-ui .main-content .pre-question-form .buttons button:hover,
+      #solvvy-v5-ui .main-content .pre-question-form .vertical-buttons button:hover
+      {
+        background: white !important;
+        border-color: #00d0b9 !important;
+        color: #00d0b9 !important;
+      }
+    </style></div><div id="solvvy-v5-ui-container" class="solvvy-v5-ui-container"><div id="solvvy-v5-ui" class="solvvy-v5-ui solvvy-cleanslate desktop position-bottom-right hidden feed-is-blocked"><div class="main-content"><div class="announcement secondary-color-background"><div class="title">Important note for Lock and Robot Vacuum:</div><div class="message">Have a Wyze Robot Vacuum or Wyze Lock? Update your Wyze app by 1/20/21 to avoid interruption.</div></div><div class="pre-question-form primary-color-background"><style>
+        .pre-question-form .instructions {
+          margin: 10px 5px 20px 5px !important;
+          text-align: center !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons .prompt {
+          margin: 12px 0 8px 0 !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons {
+          border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons:first-of-type:not(.selected) {
+          border-top: 0 !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons.selected {
+          display: flex !important;
+          align-items: center !important;
+          min-height: 50px !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons .selection {
+          flex: 1 1 auto !important;
+          margin: 8px 0 !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons .change-button {
+          flex: 0 1 auto !important;
+          min-width: 75px !important;
+          padding-right: 0 !important;
+        }
+
+        .pre-question-form .dropdown-as-buttons.selected:last-of-type {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+        }
+
+        .pre-question-form .selection .name,
+        .pre-question-form .selection .value {
+          display: inline !important;
+        }
+
+        .pre-question-form .selection .name {
+          font-weight: bold !important;
+          margin-right: 8px !important;
+        }
+
+        .pre-question-form .change-button {
+          text-decoration: underline !important;
+        }
+    </style><div class="instructions">To get you answers faster, please select a topic that relates to your question</div><div class="fields"><div class="dropdown-as-buttons form-selector"><div class="vertical-buttons"><button>Product, App, and Account Support</button><button>Orders and Returns</button><button>Wyze Services</button><button>3rd Party Integrations (Alexa, Google, IFTTT)</button></div></div></div></div></div><div class="chat-form-container"><div class="chat-form" style="height: 0px !important;"><textarea class="chat-field" placeholder="Type your question..."></textarea><button class="submit-button" disabled="" alt="Submit question"><span class="background-layer secondary-color-background"></span><div class="svg-icon"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M15.738 27.726l-4.97-4.427a.98.98 0 01.389-1.675l27.165-7.588a.98.98 0 011.065 1.508c-3.435 4.875-11.45 16.25-13.757 19.528a.978.978 0 01-1.453.166l-4.46-3.972-2.662 1.558a.948.948 0 01-1.426-.84l.11-4.258zm3.191.25l5.476 4.855a.274.274 0 00.217.068.278.278 0 00.2-.113l11.217-15.768a.28.28 0 00-.303-.432L13.68 22.749a.28.28 0 00-.11.48l3.652 3.237L26 22.472a.2.2 0 01.198.345l-7.269 5.159z" fill="#000" fill-rule="nonzero"></path></svg></div></button></div></div></div></div><div id="solvvy-v5-widget-container" class="solvvy-v5-widget-container"><div class="solvvy-v5-widget desktop position-bottom-right launcher"><div class="svg-icon widget-icon"><svg width="40" height="40"><g transform="translate(5 4)" fill="#000" fill-rule="evenodd"><path d="M7.16 24.018a.825.825 0 00-.521-.188H2.753a2.76 2.76 0 01-1.946-.803A2.733 2.733 0 010 21.091V2.739A2.745 2.745 0 012.753 0h25.494c.73 0 1.43.288 1.946.801.517.515.807 1.211.807 1.938v18.352c0 .725-.29 1.423-.807 1.936a2.76 2.76 0 01-1.946.803h-9.364a.794.794 0 00-.795.785c-.024 2.22-.086 8.385-.086 8.385L7.16 24.018zm.794-2.069a.975.975 0 00-.626-.227H3.393c-.365 0-.714-.144-.973-.401a1.368 1.368 0 01-.404-.969V3.302a1.372 1.372 0 011.377-1.37h24.08c.364 0 .714.144.972.4.26.258.404.606.404.97v17.05a1.379 1.379 0 01-1.376 1.37h-10.29a.951.951 0 00-.673.28.938.938 0 00-.274.672l.061 6.269-8.343-6.994z"></path><rect x="5" y="7" width="20" height="2" rx="1"></rect><rect x="5" y="13" width="14" height="2" rx="1"></rect></g></svg></div></div></div><div><iframe title="Opens a widget where you can find more information" id="launcher" tabindex="-1" style="width: 134px; height: 50px; padding: 0px; margin: 10px 20px; position: fixed; bottom: 30px; overflow: visible; opacity: 0; border: 0px; z-index: 999998; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; top: -9999px; visibility: hidden;" src="./Wyze Cam RTSP_files/saved_resource(2).html"></iframe><iframe title="Find more information here" id="webWidget" tabindex="-1" style="width: 374px; max-height: calc(100vh - 32px); height: 572px; position: fixed; opacity: 0; border: 0px; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; top: -9999px; visibility: hidden; z-index: 999999;" src="./Wyze Cam RTSP_files/saved_resource(3).html"></iframe></div></body></html>
